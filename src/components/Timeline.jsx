@@ -6,7 +6,7 @@ function Timeline() {
   return (
     <div
       id="about-me"
-      className="flex flex-col md:flex-row container m-auto px-4 pt-8"
+      className="flex flex-col md:flex-row container m-auto px-5 pt-8"
     >
       <div className="w-full md:w-7/12">
         {timeline.map((item) => (

@@ -16,21 +16,21 @@ function App() {
 
   return (
     <>
-      <header class="fixed backdrop-blur-sm w-[100%] z-100 border-b-2 border-black">
+      <header class="fixed backdrop-blur-sm w-[100%]  border-b border-black">
         <div className="container m-auto px-4 py-6">
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center h-1 ">
             <div>
               <a href="#home">
-                <h1 className="font-light text-xl hover:text-pink-300 hover:duration-300 cursor-pointer">
+                <h1 className="px-5 font-medium text-xl transition duration-200 hover:opacity-50 cursor-pointer">
                   Apolline Diaz
                 </h1>
               </a>
             </div>
             <div>
-              <ul className="flex gap-4 transition-all ease-in-out duration-200 text-xl">
+              <ul className="flex gap-4 transition-all ease-in-out duration-200 text-l px-5">
                 <li>
                   <a
-                    className="font-light hover:text-pink-300 hover:duration-300 cursor-pointer"
+                    className="font-medium transition duration-200 hover:opacity-50 cursor-pointer"
                     href="#projects"
                   >
                     Projets
@@ -38,7 +38,7 @@ function App() {
                 </li>
                 <li>
                   <a
-                    className="font-light hover:text-pink-300 hover:duration-300 cursor-pointer"
+                    className="font-medium transition duration-200 hover:opacity-50 cursor-pointer"
                     href="#technologies"
                   >
                     Technologies
@@ -46,7 +46,7 @@ function App() {
                 </li>
                 <li>
                   <a
-                    className="font-light hover:text-pink-300 hover:duration-300 cursor-pointer"
+                    className="font-medium transition duration-200 hover:opacity-50 cursor-pointer"
                     href="#about-me"
                   >
                     À propos
@@ -54,7 +54,7 @@ function App() {
                 </li>
                 <li>
                   <a
-                    className="font-light hover:text-pink-300 hover:duration-300 cursor-pointer"
+                    className="font-medium transition duration-200 hover:opacity-50 cursor-pointer"
                     href="#contact"
                   >
                     Contact
@@ -68,48 +68,65 @@ function App() {
       <main>
         {/* Intro/banner section */}
         <section id="home">
-          <div className="container text-left m-auto px-4 py-32 sm:py-32 flex flex-col gap-6 ">
-            <h2 className="font-light text-6xl ">Hello, I'm Apolline Diaz</h2>
-            <div>
-              <h2 className="font-bold text-5xl mt-1 gradient-text running-text">
-                développeuse full stack
+          <div className='bg-[url("src/assets/home_background.png")] h-full w-full bg-cover bg-center'>
+            <div className="container text-left m-auto px-9 py-20 sm:py-20 flex flex-col gap-6">
+              <h2 className="font-light text-6xl">
+                Hello, <br />
+                I'm Apolline Diaz
               </h2>
+              <div>
+                <h2 className="font-bold text-5xl flex flex-col gradient-text running-text">
+                  développeuse full stack
+                </h2>
+              </div>
+              <div>
+                <p className="font-light text-2xl w-50 max-w-2xl">
+                  Passionnée par la création audiovisuelle et multimédia, je me
+                  suis lancée dans le développement, après plusieurs années dans
+                  le milieu du cinéma. Je développe des projets axés sur le
+                  design.
+                </p>
+              </div>
+              <div className="space-x-3 flex flex-cols">
+                <button
+                  onClick={() =>
+                    window.open("src/assets/CV-ApollineDiaz.pdf", "_blank")
+                  }
+                  className="bg-black text-white font-light  p-2 transition duration-200 hover:opacity-50"
+                >
+                  CV
+                </button>
+                <a href="mailto:apolline.diaz@gmail.com">
+                  <button className="bg-black text-white font-light p-2 transition duration-200 hover:opacity-50">
+                    Contact
+                  </button>
+                </a>
+                <a
+                  href="https://github.com/apolline-diaz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="src/assets/github.png"
+                    alt="Github"
+                    className="cursor-pointe w-10 h-10 transition duration-200 hover:opacity-50"
+                  />
+                </a>
+              </div>
             </div>
-            <div>
-              <p className="font-thin mt-4 text-2xl w-50 max-w-2xl">
-                Passionnée par la création audiovisuelle et multimédia, je me
-                suis lancée dans le développement, après plusieurs années dans
-                le milieu du cinéma. Je développe des projets axés sur le
-                design.
-              </p>
-              {/* <p className="py-4 font-thin text-2xl">
-                Vous cherchez une alternante en front-end à partir de juillet?
-                Jetez un oeil à mon CV !
-              </p> */}
-            </div>
-            {/* </div> */}
-            {/* <img
-              src=""              width={520}
-              height={520}
-              className="relative z-10 rounded-full w-[220px] m-auto sm:w-[520px]"
-            /> */}
           </div>
         </section>
         {/* Projects section */}
-        <section id="projects">
+        <section id="projects" className="p-5">
           <div className="container m-auto px-4 sm:py-12">
             <h2 className="text-4xl font-light">Projets</h2>
-            <div className="flex flex-col grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-10 mt-11">
+            <div className="flex flex-col grid grid-cols-1 sm:grid-col md:grid-col lg:grid-col gap-10 mt-11">
               {/* PROJET 1 */}
-              <div class="h-fit group">
+              <div class="h-1/2 group">
                 <div class="relative overflow-hidden">
-                  <img
-                    class="h-full w-full object-cover"
-                    src={Project1}
-                    alt=""
-                  />
-                  <div class="absolute h-full w-full bg-black/90 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                    <div className="p-2 bg-gray-400-0.5">
+                  <img class="w-1/2 object-cover" src={Project1} alt="" />
+                  <div class="absolute w-1/2 h-full font-light bg-black/90 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                    <div className="p-5 bg-gray-400-0.5">
                       <p className="text-white text-400 text-m mt-2 text-center leading-5">
                         Site d'informations et l'actualité des films et séries,
                         à l'aide de la base de données The Movie Database.
@@ -131,12 +148,12 @@ function App() {
                     </div>
                     <div className="flex flex-row space-x-1 p-2">
                       <a href="https://github.com/apolline-diaz/Search-Movie-App">
-                        <button class="bg-pink-300 text-black rounded-md py-2 px-5 hover:bg-white hover:text-black m-1">
+                        <button className="bg-white text-black py-2 px-5 transition duration-200 hover:opacity-50  hover:text-black m-1">
                           Github
                         </button>
                       </a>
                       <a href="https://apolline-diaz.github.io/Search-Movie-App/">
-                        <button class="bg-pink-300 text-black rounded-md py-2 px-5 hover:bg-white hover:text-black m-1">
+                        <button className="bg-white text-black py-2 px-5 transition duration-200 hover:opacity-50  hover:text-black m-1">
                           Démo
                         </button>
                       </a>
@@ -147,15 +164,11 @@ function App() {
               </div>
 
               {/* PROJET 2 */}
-              <div class="h-fit group">
+              <div class="h-1/2 group">
                 <div class="relative overflow-hidden">
-                  <img
-                    class="h-full w-full object-cover"
-                    src={Project2}
-                    alt=""
-                  />
-                  <div class="absolute h-full w-full bg-black/90 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                    <div className="p-2 bg-gray-400-0.5">
+                  <img class="w-1/2 object-cover" src={Project2} alt="" />
+                  <div class="absolute w-1/2 h-full font-light bg-black/90 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                    <div className="p-5 bg-gray-400-0.5">
                       <p className="text-white text-400 text-m mt-2 text-center leading-5">
                         Plateforme de vente en ligne de meubles d'occasion,
                         interagissant avec une base de données.
@@ -183,12 +196,12 @@ function App() {
                     </div>
                     <div className="flex flex-row space-x-1 p-2">
                       <a href="https://github.com/apolline-diaz/E-Shop-Website-Second-hand-furniture-Adopteunmeuble">
-                        <button class="bg-pink-300 text-black rounded-md py-2 px-5 hover:bg-white hover:text-black m-1">
+                        <button className="bg-white text-black py-2 px-5 transition duration-200 hover:opacity-50  hover:text-black m-1">
                           Github
                         </button>
                       </a>
                       <a href="https://vimeo.com/924123048?share=copy">
-                        <button class="bg-pink-300 text-black rounded-md py-2 px-5 hover:bg-white hover:text-black m-1">
+                        <button className="bg-white text-black py-2 px-5 transition duration-200 hover:opacity-50  hover:text-black m-1">
                           Démo
                         </button>
                       </a>
@@ -199,15 +212,11 @@ function App() {
               </div>
 
               {/* PROJET 3 */}
-              <div class="h-fit group">
+              <div class="h-1/2 group">
                 <div class="relative overflow-hidden">
-                  <img
-                    class="h-full w-full object-cover"
-                    src={Project3}
-                    alt=""
-                  />
-                  <div class="absolute h-full w-full bg-black/90 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                    <div className="p-2 bg-gray-400-0.5">
+                  <img class="w-1/2 object-cover" src={Project3} alt="" />
+                  <div class="absolute w-1/2 h-full font-light bg-black/90 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                    <div className="p-5 bg-gray-400-0.5">
                       <p className="text-white text-400 text-m mt-2 text-center leading-5">
                         Extension Chrome qui transforme l'espace "Nouvel onglet"
                         avec l'univers du studio Ghibli, avec des
@@ -230,12 +239,12 @@ function App() {
                     </div>
                     <div className="flex flex-row space-x-1 p-2">
                       <a href="https://github.com/apolline-diaz/Ghibli-New-Tab-Browser-Extension">
-                        <button class="bg-pink-300 text-black rounded-md py-2 px-5 hover:bg-white hover:text-black m-1">
+                        <button className="bg-white text-black py-2 px-5 transition duration-200 hover:opacity-50  hover:text-black m-1">
                           Github
                         </button>
                       </a>
                       <a href="https://vimeo.com/927429709?share=copy">
-                        <button class="bg-pink-300 text-black rounded-md py-2 px-5 hover:bg-white hover:text-black m-1">
+                        <button className="bg-white text-black py-2 px-5 transition duration-200 hover:opacity-50  hover:text-black m-1">
                           Démo
                         </button>
                       </a>
@@ -247,15 +256,11 @@ function App() {
 
               {/* PROJET 4 */}
 
-              <div class="h-fit group">
+              <div class="h-1/2 group">
                 <div class="relative overflow-hidden">
-                  <img
-                    class="h-full w-full object-cover"
-                    src={Project4}
-                    alt=""
-                  />
-                  <div class="absolute h-full w-full bg-black/90 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                    <div className="p-2 bg-gray-400-0.5">
+                  <img class="w-1/2 object-cover" src={Project4} alt="" />
+                  <div class="absolute w-1/2 h-full font-light bg-black/90 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                    <div className="p-5 bg-gray-400-0.5">
                       <p className="text-white text-400 text-m mt-2 text-center leading-5">
                         Page web affichant les différences de productions
                         d'électricité des pays en Europe, à partir de l'API
@@ -278,12 +283,12 @@ function App() {
                     </div>
                     <div className="flex flex-row space-x-1 p-2">
                       <a href="https://github.com/apolline-diaz/Datavisualisation-API-Electricity-Maps">
-                        <button class="bg-pink-300 text-black rounded-md py-2 px-5 hover:bg-white hover:text-black m-1">
+                        <button className="bg-white text-black py-2 px-5 transition duration-200 hover:opacity-50  hover:text-black m-1">
                           Github
                         </button>
                       </a>
                       {/* <a href="">
-                        <button class="bg-pink-300 text-black rounded-md py-2 px-5 hover:bg-white hover:text-black m-1">
+                        <button className="bg-white text-black py-2 px-5 transition duration-200 hover:opacity-50  hover:text-black m-1">
                           Démo
                         </button>
                       </a> */}
@@ -295,15 +300,11 @@ function App() {
 
               {/* PROJET 5 */}
 
-              <div class="h-fit group">
+              <div class="h-1/3 group">
                 <div class="relative overflow-hidden">
-                  <img
-                    class="h-full w-full object-cover"
-                    src={Project5}
-                    alt=""
-                  />
-                  <div class="absolute h-full w-full bg-black/90 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                    <div className="p-2 bg-gray-400-0.5">
+                  <img class="w-1/3 object-cover" src={Project5} alt="" />
+                  <div class="absolute w-1/3 h-full font-light bg-black/90 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                    <div className="p-5 bg-gray-400-0.5">
                       <p className="text-white text-400 text-m mt-2 text-center leading-5">
                         Ebauche de jeu vidéo de plateforme sur la console
                         imaginaire Pico 8.
@@ -316,12 +317,12 @@ function App() {
                     </div>
                     <div className="flex flex-row space-x-1 p-2">
                       <a href="https://github.com/apolline-diaz/Datavisualisation-API-Electricity-Maps">
-                        <button class="bg-pink-300 text-black rounded-md py-2 px-5 hover:bg-white hover:text-black m-1">
+                        <button className="bg-white text-black py-2 px-5 transition duration-200 hover:opacity-50  hover:text-black m-1">
                           Github
                         </button>
                       </a>
                       {/* <a href="">
-                        <button class="bg-pink-300 text-black rounded-md py-2 px-5 hover:bg-white hover:text-black m-1">
+                        <button className="bg-white text-black py-2 px-5 transition duration-200 hover:opacity-50  hover:text-black m-1">
                           Démo
                         </button>
                       </a> */}
@@ -333,8 +334,8 @@ function App() {
             </div>
           </div>
           {/* Technologies section */}
-          <section id="technologies" className="py-10">
-            <div className="container m-auto px-4">
+          <section id="technologies" className="p-5">
+            <div className="container m-auto">
               <h2 className="text-4xl font-light">Technologies</h2>
               <div className="mt-14">
                 <div>
@@ -342,35 +343,35 @@ function App() {
                     <h2 className="font-semibold">HTML</h2>
                     <p className="text-gray-500">Intermédiaire</p>
                   </div>
-                  <span className="w-[40%] h-1 mt-2 bg-slate-600 bg-gradient-to-t from-pink-400 to-pink-200 block rounded-md"></span>
+                  <span className="w-[40%] h-1 mt-2 bg-slate-600 bg-gradient-to-t from-gray-700 to-gray-500 block rounded-md"></span>
                 </div>
                 <div className="mt-8">
                   <div className="flex justify-between items-center">
                     <h2 className="font-semibold">CSS & Tailwind</h2>
                     <p className="text-gray-500">Intermédiaire</p>
                   </div>
-                  <span className="w-[25%] h-1 mt-2 bg-slate-600 bg-gradient-to-t from-pink-400 to-pink-200 block rounded-md"></span>
+                  <span className="w-[25%] h-1 mt-2 bg-slate-600 bg-gradient-to-t from-gray-700 to-gray-500 block rounded-md"></span>
                 </div>
                 <div className="mt-8">
                   <div className="flex justify-between items-center">
                     <h2 className="font-semibold">Javascript</h2>
                     <p className="text-gray-500">Débutant</p>
                   </div>
-                  <span className="w-[20%] h-1 mt-2 bg-slate-600 bg-gradient-to-t from-pink-400 to-pink-200 block rounded-md"></span>
+                  <span className="w-[20%] h-1 mt-2 bg-slate-600 bg-gradient-to-t from-gray-700 to-gray-500 block rounded-md"></span>
                 </div>
                 <div className="mt-8">
                   <div className="flex justify-between items-center">
                     <h2 className="font-semibold">React</h2>
                     <p className="text-gray-500">Débutant</p>
                   </div>
-                  <span className="w-[10%] h-1 mt-2 bg-slate-600 bg-gradient-to-t from-pink-400 to-pink-200 block rounded-md"></span>
+                  <span className="w-[10%] h-1 mt-2 bg-slate-600 bg-gradient-to-t from-gray-700 to-gray-500 block rounded-md"></span>
                 </div>
                 <div className="mt-8">
                   <div className="flex justify-between items-center">
                     <h2 className="font-semibold">UI Design in Figma</h2>
                     <p className="text-gray-500">Débutant</p>
                   </div>
-                  <span className="w-[10%] h-1 mt-2 bg-slate-600 bg-gradient-to-t from-pink-400 to-pink-200 block rounded-md"></span>
+                  <span className="w-[10%] h-1 mt-2 bg-slate-600 bg-gradient-to-t from-gray-700 to-gray-500 block rounded-md"></span>
                 </div>
               </div>
             </div>
@@ -397,26 +398,31 @@ function App() {
                     Slack
                   </p>
                 </div>
-              </div>
-              <div className="flex flex-col sm:flex-row gap-4 sm:gap-20 mt-2 sm:mt-4 w-[80%] px-4">
                 <div>
                   <p className="font-light before:w-3 before:h-3 before:bg-black  before:block before:rounded-full before:mt-l before:-left-6 before:absolute relative left-3">
                     Wordpress
                   </p>
                 </div>
               </div>
+              {/* <div className="flex flex-col sm:flex-row gap-4 sm:gap-20 mt-2 sm:mt-4 w-[80%] px-4">
+                <div>
+                  <p className="font-light before:w-3 before:h-3 before:bg-black  before:block before:rounded-full before:mt-l before:-left-6 before:absolute relative left-3">
+                    Wordpress
+                  </p>
+                </div>
+              </div> */}
             </div>
           </section>
         </section>
         {/* EXPERIENCE */}
-        <section className="py-8">
+        <section className="p-5">
           <div className="container m-auto px-4">
             <h2 className="text-4xl font-light">À propos</h2>
           </div>
           <Timeline />
         </section>
         {/* CONTACT */}
-        <section className="py-10">
+        <section className="p-5">
           <div className="container m-auto px-4">
             <h2 className="text-4xl font-light">Contact</h2>
           </div>

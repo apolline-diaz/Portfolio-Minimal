@@ -4,13 +4,13 @@ function Contact() {
   return (
     <div
       id="contact"
-      className="flex flex-col md:flex-row container m-auto px-4 pt-8"
+      className="flex flex-col md:flex-row container m-auto px-5 pt-8"
     >
       <div className="flex justify-center items-center">
         <form
           action="https://getform.io/f/eapdjvea"
           method="POST"
-          className="flex flex-col w-full md:w-7/12"
+          className="flex flex-col w-full"
         >
           <input
             type="text"
