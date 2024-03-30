@@ -121,7 +121,7 @@ function App() {
           <div className="container m-auto px-4 sm:py-12">
             <h2 className="text-4xl font-light">Projets</h2>
             <div className="flex flex-col grid grid-cols-1 sm:grid-col md:grid-col lg:grid-col gap-10 mt-11">
-              {/* Harmoniser et faire le responsive du format de l'image pour les petits écrans, comme suivant le modèle du projet 1 ci dessous */}
+              {/* Vérifier le responsive du format de l'image pour les petits écrans, pour chaque projet */}
               {/* PROJET 1 */}
               <div class="sm:h-1/2 h-fit group">
                 <div class="relative overflow-hidden">
@@ -169,10 +169,14 @@ function App() {
               </div>
 
               {/* PROJET 2 */}
-              <div class="h-1/2 group">
+              <div class="sm:h-1/2 h-fit group">
                 <div class="relative overflow-hidden">
-                  <img class="w-1/2 object-cover" src={Project2} alt="" />
-                  <div class="absolute w-1/2 h-full font-light bg-black/90 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <img
+                    class="sm:w-1/2 w-full object-cover"
+                    src={Project2}
+                    alt=""
+                  />
+                  <div class="absolute sm:w-1/2 h-full w-full font-light bg-black/90 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
                     <div className="p-5 bg-gray-400-0.5">
                       <p className="text-white text-400 text-m mt-2 text-center leading-5">
                         Plateforme de vente en ligne de meubles d'occasion,
@@ -217,10 +221,14 @@ function App() {
               </div>
 
               {/* PROJET 3 */}
-              <div class="h-1/2 group">
+              <div class="sm:h-1/2 h-fit group">
                 <div class="relative overflow-hidden">
-                  <img class="w-1/2 object-cover" src={Project3} alt="" />
-                  <div class="absolute w-1/2 h-full font-light bg-black/90 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <img
+                    class="sm:w-1/2 w-full object-cover"
+                    src={Project3}
+                    alt=""
+                  />
+                  <div class="absolute sm:w-1/2 h-full w-full font-light bg-black/90 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
                     <div className="p-5 bg-gray-400-0.5">
                       <p className="text-white text-400 text-m mt-2 text-center leading-5">
                         Extension Chrome qui transforme l'espace "Nouvel onglet"
@@ -261,10 +269,14 @@ function App() {
 
               {/* PROJET 4 */}
 
-              <div class="h-1/2 group">
+              <div class="sm:h-1/2 h-fit group">
                 <div class="relative overflow-hidden">
-                  <img class="w-1/2 object-cover" src={Project4} alt="" />
-                  <div class="absolute w-1/2 h-full font-light bg-black/90 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <img
+                    class="sm:w-1/2 w-full object-cover"
+                    src={Project4}
+                    alt=""
+                  />
+                  <div class="absolute sm:w-1/2 h-full w-full font-light bg-black/90 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
                     <div className="p-5 bg-gray-400-0.5">
                       <p className="text-white text-400 text-m mt-2 text-center leading-5">
                         Page web affichant les différences de productions
@@ -305,10 +317,14 @@ function App() {
 
               {/* PROJET 5 */}
 
-              <div class="h-1/3 group">
+              <div class="sm:h-1/3 h-fit group">
                 <div class="relative overflow-hidden">
-                  <img class="w-1/3 object-cover" src={Project5} alt="" />
-                  <div class="absolute w-1/3 h-full font-light bg-black/90 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <img
+                    class="sm:w-1/3 w-full object-cover"
+                    src={Project5}
+                    alt=""
+                  />
+                  <div class="absolute sm:w-1/3 h-full w-full font-light bg-black/90 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
                     <div className="p-5 bg-gray-400-0.5">
                       <p className="text-white text-400 text-m mt-2 text-center leading-5">
                         Ebauche de jeu vidéo de plateforme sur la console
