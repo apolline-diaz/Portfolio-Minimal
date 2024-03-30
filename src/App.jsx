@@ -121,11 +121,16 @@ function App() {
           <div className="container m-auto px-4 sm:py-12">
             <h2 className="text-4xl font-light">Projets</h2>
             <div className="flex flex-col grid grid-cols-1 sm:grid-col md:grid-col lg:grid-col gap-10 mt-11">
+              {/* Harmoniser et faire le responsive du format de l'image pour les petits écrans, comme suivant le modèle du projet 1 ci dessous */}
               {/* PROJET 1 */}
-              <div class="h-1/2 group">
+              <div class="sm:h-1/2 h-fit group">
                 <div class="relative overflow-hidden">
-                  <img class="w-1/2 object-cover" src={Project1} alt="" />
-                  <div class="absolute w-1/2 h-full font-light bg-black/90 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <img
+                    class="sm:w-1/2 w-full object-cover"
+                    src={Project1}
+                    alt=""
+                  />
+                  <div class="absolute sm:w-1/2 h-full w-full font-light bg-black/90 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
                     <div className="p-5 bg-gray-400-0.5">
                       <p className="text-white text-400 text-m mt-2 text-center leading-5">
                         Site d'informations et l'actualité des films et séries,
