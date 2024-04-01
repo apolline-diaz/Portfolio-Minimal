@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Timeline from "./components/Timeline.jsx";
+import Skills from "./components/Skills.jsx";
 import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer.jsx";
 import Project1 from "./assets/project-movie-website.png";
@@ -36,14 +37,14 @@ function App() {
                     Projets
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a
                     className="font-medium transition duration-200 hover:opacity-50 cursor-pointer"
                     href="#technologies"
                   >
                     Technologies
                   </a>
-                </li>
+                </li> */}
                 <li>
                   <a
                     className="font-medium transition duration-200 hover:opacity-50 cursor-pointer"
@@ -119,8 +120,8 @@ function App() {
         {/* Projects section */}
         <section id="projects" className="p-5">
           <div className="container m-auto px-4 sm:py-12">
-            <h2 className="text-4xl font-light">Projets</h2>
-            <div className="flex flex-col grid grid-cols-1 sm:grid-col md:grid-col lg:grid-col gap-10 mt-11">
+            <h2 className="text-4xl font-light mb-11">Projets</h2>
+            <div className="flex flex-col grid grid-cols-1 sm:grid-col md:grid-col lg:grid-col gap-10 ">
               {/* Vérifier le responsive du format de l'image pour les petits écrans, pour chaque projet */}
               {/* PROJET 1 */}
               <div class="sm:h-1/2 h-fit group">
@@ -130,7 +131,7 @@ function App() {
                     src={Project1}
                     alt=""
                   />
-                  <div class="absolute sm:w-1/2 h-full w-full font-light bg-black/90 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <div class="absolute sm:w-1/2 h-full w-full font-light bg-black/90 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-700">
                     <div className="p-5 bg-gray-400-0.5">
                       <p className="text-white text-400 text-m mt-2 text-center leading-5">
                         Site d'informations et l'actualité des films et séries,
@@ -176,7 +177,7 @@ function App() {
                     src={Project2}
                     alt=""
                   />
-                  <div class="absolute sm:w-1/2 h-full w-full font-light bg-black/90 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <div class="absolute sm:w-1/2 h-full w-full font-light bg-black/90 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-700">
                     <div className="p-5 bg-gray-400-0.5">
                       <p className="text-white text-400 text-m mt-2 text-center leading-5">
                         Plateforme de vente en ligne de meubles d'occasion,
@@ -228,7 +229,7 @@ function App() {
                     src={Project3}
                     alt=""
                   />
-                  <div class="absolute sm:w-1/2 h-full w-full font-light bg-black/90 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <div class="absolute sm:w-1/2 h-full w-full font-light bg-black/90 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-700">
                     <div className="p-5 bg-gray-400-0.5">
                       <p className="text-white text-400 text-m mt-2 text-center leading-5">
                         Extension Chrome qui transforme l'espace "Nouvel onglet"
@@ -276,7 +277,7 @@ function App() {
                     src={Project4}
                     alt=""
                   />
-                  <div class="absolute sm:w-1/2 h-full w-full font-light bg-black/90 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <div class="absolute sm:w-1/2 h-full w-full font-light bg-black/90 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-700">
                     <div className="p-5 bg-gray-400-0.5">
                       <p className="text-white text-400 text-m mt-2 text-center leading-5">
                         Page web affichant les différences de productions
@@ -324,7 +325,7 @@ function App() {
                     src={Project5}
                     alt=""
                   />
-                  <div class="absolute sm:w-1/3 h-full w-full font-light bg-black/90 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <div class="absolute sm:w-1/3 h-full w-full font-light bg-black/90 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-700">
                     <div className="p-5 bg-gray-400-0.5">
                       <p className="text-white text-400 text-m mt-2 text-center leading-5">
                         Ebauche de jeu vidéo de plateforme sur la console
@@ -354,91 +355,20 @@ function App() {
               </div>
             </div>
           </div>
-          {/* Technologies section */}
-          <section id="technologies" className="p-5">
-            <div className="container m-auto">
-              <h2 className="text-4xl font-light">Technologies</h2>
-              <div className="mt-14">
-                <div>
-                  <div className="flex justify-between items-center">
-                    <h2 className="font-semibold">HTML</h2>
-                    <p className="text-gray-500">Intermédiaire</p>
-                  </div>
-                  <span className="w-[40%] h-1 mt-2 bg-slate-600 bg-gradient-to-t from-gray-700 to-gray-500 block rounded-md"></span>
-                </div>
-                <div className="mt-8">
-                  <div className="flex justify-between items-center">
-                    <h2 className="font-semibold">CSS & Tailwind</h2>
-                    <p className="text-gray-500">Intermédiaire</p>
-                  </div>
-                  <span className="w-[25%] h-1 mt-2 bg-slate-600 bg-gradient-to-t from-gray-700 to-gray-500 block rounded-md"></span>
-                </div>
-                <div className="mt-8">
-                  <div className="flex justify-between items-center">
-                    <h2 className="font-semibold">Javascript</h2>
-                    <p className="text-gray-500">Débutant</p>
-                  </div>
-                  <span className="w-[20%] h-1 mt-2 bg-slate-600 bg-gradient-to-t from-gray-700 to-gray-500 block rounded-md"></span>
-                </div>
-                <div className="mt-8">
-                  <div className="flex justify-between items-center">
-                    <h2 className="font-semibold">React</h2>
-                    <p className="text-gray-500">Débutant</p>
-                  </div>
-                  <span className="w-[10%] h-1 mt-2 bg-slate-600 bg-gradient-to-t from-gray-700 to-gray-500 block rounded-md"></span>
-                </div>
-                <div className="mt-8">
-                  <div className="flex justify-between items-center">
-                    <h2 className="font-semibold">UI Design in Figma</h2>
-                    <p className="text-gray-500">Débutant</p>
-                  </div>
-                  <span className="w-[10%] h-1 mt-2 bg-slate-600 bg-gradient-to-t from-gray-700 to-gray-500 block rounded-md"></span>
-                </div>
-              </div>
-            </div>
-          </section>
-          {/* Additional skills section */}
-          <section>
-            <div className="container m-auto px-4 py-8 ">
-              <h2 className="text-2xl font-medium ">
-                Technologies additionnelles
-              </h2>
-              <div className="flex flex-col sm:flex-row gap-4 sm:gap-20 mt-12 sm:mt-4 w-[80%] px-4">
-                <div>
-                  <p className="font-light before:w-3 before:h-3 before:bg-black before:block before:rounded-full before:mt-l before:-left-6 before:absolute relative left-3">
-                    Git
-                  </p>
-                </div>
-                <div>
-                  <p className="font-light before:w-3 before:h-3 before:bg-black before:block before:rounded-full before:mt-l before:-left-6 before:absolute relative left-3">
-                    Jira
-                  </p>
-                </div>
-                <div>
-                  <p className="font-light before:w-3 before:h-3 before:bg-black before:block before:rounded-full before:mt-l before:-left-6 before:absolute relative left-3">
-                    Slack
-                  </p>
-                </div>
-                <div>
-                  <p className="font-light before:w-3 before:h-3 before:bg-black  before:block before:rounded-full before:mt-l before:-left-6 before:absolute relative left-3">
-                    Wordpress
-                  </p>
-                </div>
-              </div>
-              {/* <div className="flex flex-col sm:flex-row gap-4 sm:gap-20 mt-2 sm:mt-4 w-[80%] px-4">
-                <div>
-                  <p className="font-light before:w-3 before:h-3 before:bg-black  before:block before:rounded-full before:mt-l before:-left-6 before:absolute relative left-3">
-                    Wordpress
-                  </p>
-                </div>
-              </div> */}
-            </div>
-          </section>
         </section>
+
+        {/* TECHNOLOGIES SECTION */}
+        {/* <section id="technologies" className="p-5">
+          <div className="container m-auto px-4">
+            <h2 className="text-4xl font-light mb-11">Technologies</h2>
+          </div>
+          <Skills />
+        </section> */}
+
         {/* EXPERIENCE */}
         <section className="p-5">
           <div className="container m-auto px-4">
-            <h2 className="text-4xl font-light">À propos</h2>
+            <h2 className="text-4xl font-light mb-11">À propos</h2>
           </div>
           <Timeline />
         </section>
