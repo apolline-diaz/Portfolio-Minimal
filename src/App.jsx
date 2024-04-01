@@ -91,7 +91,7 @@ function App() {
               <div className="space-x-3 flex flex-cols">
                 <button
                   onClick={() =>
-                    window.open("/assets/CV-ApollineDiaz.pdf", "_blank")
+                    window.open("public/assets/CV-ApollineDiaz.pdf", "_blank")
                   }
                   className="bg-black text-white font-light  p-2 transition duration-200 hover:opacity-50"
                 >
