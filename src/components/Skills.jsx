@@ -1,9 +1,9 @@
 import React from "react";
-import html from "../assets/html.png";
-import css from "../assets/css.png";
-import javascript from "../assets/javascript.png";
-import react from "../assets/react.png";
-import tailwind from "../assets/tailwind.png";
+import html from "/assets/html.png";
+import css from "/assets/css.png";
+import javascript from "/assets/javascript.png";
+import react from "/assets/react.png";
+import tailwind from "/assets/tailwind.png";
 
 function Skills() {
   return (

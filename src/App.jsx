@@ -4,13 +4,13 @@ import Timeline from "./components/Timeline.jsx";
 import Skills from "./components/Skills.jsx";
 import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer.jsx";
-import Project1 from "./assets/project-movie-website.png";
-import Project2 from "./assets/project-plateforme.png";
-import Project3 from "./assets/project-extension.png";
-import Project4 from "./assets/project-datavisualisation.png";
-import Project5 from "./assets/project-pico.png";
-import LinkedIn from "./assets/linkedin.png";
-import Github from "./assets/github.png";
+import Project1 from "/assets/project-movie-website-1.png";
+import Project2 from "/assets/project-plateforme.png";
+import Project3 from "/assets/project-extension.png";
+import Project4 from "/assets/project-datavisualisation.png";
+import Project5 from "/assets/project-pico.png";
+import LinkedIn from "/assets/linkedin.png";
+import Github from "/assets/github.png";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -69,7 +69,7 @@ function App() {
       <main>
         {/* Intro/banner section */}
         <section id="home">
-          <div className='bg-[url("src/assets/home_background.png")] h-full w-full bg-cover bg-center'>
+          <div className='bg-[url("/assets/home_background.png")] h-full w-full bg-cover bg-center'>
             <div className="container text-left m-auto px-9 py-20 sm:py-20 flex flex-col gap-6">
               <h2 className="font-light text-6xl">
                 Hello, <br />
@@ -91,7 +91,7 @@ function App() {
               <div className="space-x-3 flex flex-cols">
                 <button
                   onClick={() =>
-                    window.open("src/assets/CV-ApollineDiaz.pdf", "_blank")
+                    window.open("/assets/CV-ApollineDiaz.pdf", "_blank")
                   }
                   className="bg-black text-white font-light  p-2 transition duration-200 hover:opacity-50"
                 >
@@ -108,7 +108,7 @@ function App() {
                   rel="noopener noreferrer"
                 >
                   <img
-                    src="src/assets/github.png"
+                    src={Github}
                     alt="Github"
                     className="cursor-pointe w-10 h-10 transition duration-200 hover:opacity-50"
                   />
