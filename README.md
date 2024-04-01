@@ -1,8 +1,9 @@
-# React + Vite
+# Portfolio Minimal en React et Tailwind
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Pour mieux prendre en main React et Tailwind, j'ai décidé de travailler un nouveau portfolio, avec une esthétique plus minimale.
+Vous y trouverez mes projets avec des liens Github et des démos. Vous pourrez aussi en apprendre plus sur mon parcours et mes compétences!
 
-Currently, two official plugins are available:
+Le portfolio est encore en travaux.
+Il a cependant été déployé sur Git Pages pour avoir un aperçu mais quelques problèmes d'affichage et de mise à jour subsistent.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Le lien vers le portfolio est juste ici : https://apolline-diaz.github.io/Portfolio-Minimal/
