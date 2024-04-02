@@ -9,7 +9,7 @@ export default[
         year: '2020',
         title:'Programmatrice indépendante',
         duration: '3 ans',
-        details: 'Festivals, collectifs et salles de cinémas (La Clef Revival, What\'s Your Flavor?, Festival du Film de Fesses)',
+        details: 'Festivals, collectifs et salles de cinémas',
     },
     {
         year: '2020',
@@ -25,7 +25,7 @@ export default[
     },
     {
         year: '2017',
-        title:'Service Civique - Médiatrice et assistante en programmation et actions Jeune Public',
+        title:'Service Civique - Assistante en programmation et actions Jeune Public',
         duration: '8 mois',
         details: 'ACID (Association du Cinéma Indépendant pour sa Diffusion)',
     },

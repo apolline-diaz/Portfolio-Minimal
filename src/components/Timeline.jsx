@@ -5,7 +5,7 @@ import TimelineItem from "../components/TimelineItem.jsx";
 function Timeline() {
   return (
     <div
-      id="about-me"
+      id="experience"
       className="flex flex-col md:flex-row container m-auto px-5 pt-8"
     >
       <div className="w-full md:w-7/12">

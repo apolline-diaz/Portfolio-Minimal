@@ -32,25 +32,33 @@ function App() {
                 <li>
                   <a
                     className="font-medium transition duration-200 hover:opacity-50 cursor-pointer"
+                    href="#home"
+                  >
+                    À propos
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="font-medium transition duration-200 hover:opacity-50 cursor-pointer"
                     href="#projects"
                   >
                     Projets
                   </a>
                 </li>
-                {/* <li>
-                  <a
-                    className="font-medium transition duration-200 hover:opacity-50 cursor-pointer"
-                    href="#technologies"
-                  >
-                    Technologies
-                  </a>
-                </li> */}
                 <li>
                   <a
                     className="font-medium transition duration-200 hover:opacity-50 cursor-pointer"
-                    href="#about-me"
+                    href="#skills"
                   >
-                    À propos
+                    Compétences
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="font-medium transition duration-200 hover:opacity-50 cursor-pointer"
+                    href="#experience"
+                  >
+                    Expérience
                   </a>
                 </li>
                 <li>
@@ -91,7 +99,7 @@ function App() {
               <div className="space-x-3 flex flex-cols">
                 <button
                   onClick={() =>
-                    window.open("public/assets/CV-ApollineDiaz.pdf", "_blank")
+                    window.open("./assets/CV-ApollineDiaz.pdf", "_blank")
                   }
                   className="bg-black text-white font-light  p-2 transition duration-200 hover:opacity-50"
                 >
@@ -357,22 +365,22 @@ function App() {
           </div>
         </section>
 
-        {/* TECHNOLOGIES SECTION */}
-        {/* <section id="technologies" className="p-5">
+        {/* SKILLS SECTION */}
+        <section id="skills" className="p-5">
           <div className="container m-auto px-4">
-            <h2 className="text-4xl font-light mb-11">Technologies</h2>
+            <h2 className="text-4xl font-light mb-11">Compétences et outils</h2>
           </div>
           <Skills />
-        </section> */}
+        </section>
 
-        {/* EXPERIENCE */}
+        {/* EXPERIENCE SECTION */}
         <section className="p-5">
           <div className="container m-auto px-4">
-            <h2 className="text-4xl font-light mb-11">À propos</h2>
+            <h2 className="text-4xl font-light mb-11">Expérience</h2>
           </div>
           <Timeline />
         </section>
-        {/* CONTACT */}
+        {/* CONTACT SECTION */}
         <section className="p-5">
           <div className="container m-auto px-4">
             <h2 className="text-4xl font-light">Contact</h2>
