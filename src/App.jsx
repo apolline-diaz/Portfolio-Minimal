@@ -17,7 +17,7 @@ function App() {
 
   return (
     <>
-      <header class="fixed backdrop-blur-sm w-[100%]  border-b border-black">
+      <header class="fixed backdrop-blur-sm w-[100%] scroll-smooth">
         <div className="container m-auto px-4 py-6">
           <div className="flex justify-between items-center h-1 ">
             <div>
@@ -45,14 +45,14 @@ function App() {
                     Projets
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a
                     className="font-medium transition duration-200 hover:opacity-50 cursor-pointer"
                     href="#skills"
                   >
                     Compétences
                   </a>
-                </li>
+                </li> */}
                 <li>
                   <a
                     className="font-medium transition duration-200 hover:opacity-50 cursor-pointer"
@@ -75,7 +75,7 @@ function App() {
         </div>
       </header>
       <main>
-        {/* Intro/banner section */}
+        {/* HOME SECTION */}
         <section id="home">
           <div className='bg-[url("/assets/home_background.png")] h-full w-full bg-cover bg-center'>
             <div className="container text-left m-auto px-9 py-20 sm:py-20 flex flex-col gap-6">
@@ -84,7 +84,7 @@ function App() {
                 I'm Apolline Diaz
               </h2>
               <div>
-                <h2 className="font-bold text-5xl flex flex-col gradient-text running-text">
+                <h2 className="font-bold text-5xl gradient-text running-text flex flex-wrap">
                   développeuse full stack
                 </h2>
               </div>
@@ -92,8 +92,8 @@ function App() {
                 <p className="font-light text-2xl w-50 max-w-2xl">
                   Passionnée par la création audiovisuelle et multimédia, je me
                   suis lancée dans le développement, après plusieurs années dans
-                  le milieu du cinéma. Je développe des projets axés sur le
-                  design.
+                  le milieu du cinéma. Je développe des projets orientés sur le
+                  front-end.
                 </p>
               </div>
               <div className="space-x-3 flex flex-cols">
@@ -125,21 +125,30 @@ function App() {
             </div>
           </div>
         </section>
-        {/* Projects section */}
+        {/* PROJECTS SECTION */}
         <section id="projects" className="p-5">
-          <div className="container m-auto px-4 sm:py-12">
+          <div className="container  m-auto px-4 sm:py-12">
             <h2 className="text-4xl font-light mb-11">Projets</h2>
             <div className="flex flex-col grid grid-cols-1 sm:grid-col md:grid-col lg:grid-col gap-10 ">
-              {/* Vérifier le responsive du format de l'image pour les petits écrans, pour chaque projet */}
+              {/* SKILLS SECTION */}
+              <section>
+                {/* <div className="container m-auto px-4">
+                  <h2 className="text-2xl font-medium mb-11">
+                    Compétences et outils
+                  </h2>
+                </div> */}
+                <Skills />
+              </section>
+
               {/* PROJET 1 */}
-              <div class="sm:h-1/2 h-fit group">
+              <div class="h-fit group justify-center">
                 <div class="relative overflow-hidden">
                   <img
-                    class="sm:w-1/2 w-full object-cover"
+                    class="sm:w-3/4 w-full object-cover"
                     src={Project1}
                     alt=""
                   />
-                  <div class="absolute sm:w-1/2 h-full w-full font-light bg-black/90 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-700">
+                  <div class="absolute sm:w-3/4 h-full w-full font-light bg-black/90 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-700">
                     <div className="p-5 bg-gray-400-0.5">
                       <p className="text-white text-400 text-m mt-2 text-center leading-5">
                         Site d'informations et l'actualité des films et séries,
@@ -178,14 +187,14 @@ function App() {
               </div>
 
               {/* PROJET 2 */}
-              <div class="sm:h-1/2 h-fit group">
+              <div class="h-fit group">
                 <div class="relative overflow-hidden">
                   <img
-                    class="sm:w-1/2 w-full object-cover"
+                    class="sm:w-3/4 w-full object-cover"
                     src={Project2}
                     alt=""
                   />
-                  <div class="absolute sm:w-1/2 h-full w-full font-light bg-black/90 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-700">
+                  <div class="absolute sm:w-3/4 h-full w-full font-light bg-black/90 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-700">
                     <div className="p-5 bg-gray-400-0.5">
                       <p className="text-white text-400 text-m mt-2 text-center leading-5">
                         Plateforme de vente en ligne de meubles d'occasion,
@@ -230,14 +239,14 @@ function App() {
               </div>
 
               {/* PROJET 3 */}
-              <div class="sm:h-1/2 h-fit group">
+              <div class="h-fit group">
                 <div class="relative overflow-hidden">
                   <img
-                    class="sm:w-1/2 w-full object-cover"
+                    class="sm:w-3/4 w-full object-cover"
                     src={Project3}
                     alt=""
                   />
-                  <div class="absolute sm:w-1/2 h-full w-full font-light bg-black/90 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-700">
+                  <div class="absolute sm:w-3/4 h-full w-full font-light bg-black/90 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-700">
                     <div className="p-5 bg-gray-400-0.5">
                       <p className="text-white text-400 text-m mt-2 text-center leading-5">
                         Extension Chrome qui transforme l'espace "Nouvel onglet"
@@ -278,14 +287,14 @@ function App() {
 
               {/* PROJET 4 */}
 
-              <div class="sm:h-1/2 h-fit group">
+              <div class="h-fit group">
                 <div class="relative overflow-hidden">
                   <img
-                    class="sm:w-1/2 w-full object-cover"
+                    class="sm:w-3/4 w-full object-cover"
                     src={Project4}
                     alt=""
                   />
-                  <div class="absolute sm:w-1/2 h-full w-full font-light bg-black/90 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-700">
+                  <div class="absolute sm:w-3/4 h-full w-full font-light bg-black/90 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-700">
                     <div className="p-5 bg-gray-400-0.5">
                       <p className="text-white text-400 text-m mt-2 text-center leading-5">
                         Page web affichant les différences de productions
@@ -326,7 +335,7 @@ function App() {
 
               {/* PROJET 5 */}
 
-              <div class="sm:h-1/3 h-fit group">
+              <div class="h-fit group">
                 <div class="relative overflow-hidden">
                   <img
                     class="sm:w-1/3 w-full object-cover"
@@ -363,14 +372,6 @@ function App() {
               </div>
             </div>
           </div>
-        </section>
-
-        {/* SKILLS SECTION */}
-        <section id="skills" className="p-5">
-          <div className="container m-auto px-4">
-            <h2 className="text-4xl font-light mb-11">Compétences et outils</h2>
-          </div>
-          <Skills />
         </section>
 
         {/* EXPERIENCE SECTION */}
