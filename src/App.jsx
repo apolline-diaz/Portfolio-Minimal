@@ -375,14 +375,14 @@ function App() {
         </section>
 
         {/* EXPERIENCE SECTION */}
-        <section className="p-5">
+        <section id="experience" className="p-5">
           <div className="container m-auto px-4">
             <h2 className="text-4xl font-light mb-11">Expérience</h2>
           </div>
           <Timeline />
         </section>
         {/* CONTACT SECTION */}
-        <section className="p-5">
+        <section id="contact" className="p-5">
           <div className="container m-auto px-4">
             <h2 className="text-4xl font-light">Contact</h2>
           </div>

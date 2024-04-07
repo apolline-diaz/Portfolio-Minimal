@@ -1,46 +1,50 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_gzakfou", "template_x59musc", form.current, {
+        publicKey: "ueYdXHNISUtJz0Fco",
+      })
+      .then(
+        () => {
+          console.log(result.text);
+          console.log("Message sent!");
+        },
+        (error) => {
+          console.log("Failed...", error.text);
+        }
+      );
+  };
+
   return (
-    <div
-      id="contact"
-      className="flex flex-col md:flex-row container m-auto px-5 pt-8"
-    >
-      <div className="flex justify-center items-center">
-        <form
-          action="https://getform.io/f/eapdjvea"
-          method="POST"
-          className="flex flex-col w-full"
-        >
-          <input
-            type="text"
-            name="name"
-            placeholder="Name"
-            className="p-2 bg-transparent border-2 rounded-md focus:outline-none"
-          />
-          <input
-            type="text"
-            name="email"
-            placeholder="Email"
-            className="my-2 p-2 bg-transparent border-2 rounded-md focus:outline-none"
-          />
-          <textarea
-            name="message"
-            placeholder="Message"
-            cols="100"
-            rows="10"
-            className="p-2 mb-4 bg-transparent border-2 rounded-md focus:outline-none"
-          />
-          <button
-            type="button"
-            className="text-center inline-block px-8 py-3 w-max text-base font-medium rounded-full text-white bg-black hover:bg-opacity-50"
-          >
-            Envoyer
-          </button>
-        </form>
-      </div>
+    <div className="flex flex-col md:flex-row container m-auto px-5 pt-8">
+      <form
+        ref={form}
+        onSubmit={sendEmail}
+        className="flex flex-start flex-col w-[100%] text-lg"
+      >
+        <label>Name</label>
+        <input type="text" name="user_name" className="border b-black" />
+        <label>Email</label>
+        <input type="email" name="user_email" className="border b-black" />
+        <label>Message</label>
+        <textarea name="message" className="border b-black" />
+        <input
+          type="submit"
+          value="Send"
+          className="border p-2 m-2 text-white bg-black hover:bg-gray-700 hover:cursor-pointer"
+        />
+      </form>
     </div>
   );
 }
 
 export default Contact;
+
+export const ContactUs = () => {};
