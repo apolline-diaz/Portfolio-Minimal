@@ -29,14 +29,12 @@ export default [
         imgUrl: "./assets/project-datavisualisation.png",
         stack:["HTML", "CSS", "JavaScript", "API"],
         linkGit: "https://github.com/apolline-diaz/Datavisualisation-API-Electricity-Maps",
-        linkDemo: "",
     },
     {
         title: "Jeu vidéo Pico 8",
         description: "Ebauche de jeu vidéo de plateforme sur la console imaginaire Pico 8.",
         imgUrl: "./assets/project-pico.png",
         stack:["Lua"],
-        linkGit: "https://github.com/apolline-diaz/Datavisualisation-API-Electricity-Maps",
-        linkDemo: "https://apolline-diaz.github.io/Search-Movie-App/",
+        linkGit: "https://github.com/apolline-diaz/Pico-8-Video-game",
     },
 ]

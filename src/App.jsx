@@ -18,7 +18,7 @@ function App() {
 
   return (
     <>
-      <header class="fixed backdrop-blur-sm w-[100%] scroll-smooth fixed backdrop-blur-sm w-[100%] scroll-smooth z-10">
+      <header class="fixed backdrop-blur-sm w-[100%] scroll-smooth">
         <div className="container m-auto px-4 py-6">
           <div className="flex justify-between items-center h-1 ">
             <div>
@@ -46,6 +46,14 @@ function App() {
                     Projets
                   </a>
                 </li>
+                {/* <li>
+                  <a
+                    className="font-medium transition duration-200 hover:opacity-50 cursor-pointer"
+                    href="#skills"
+                  >
+                    Compétences
+                  </a>
+                </li> */}
                 <li>
                   <a
                     className="font-medium transition duration-200 hover:opacity-50 cursor-pointer"
@@ -119,7 +127,7 @@ function App() {
           </div>
         </section>
         {/* PROJECTS SECTION */}
-        <section id="projects" className="p-5 mb-5">
+        <section id="projects" className="p-5  mb-5">
           <div className="container  m-auto px-4 sm:py-12">
             <h2 className="text-4xl font-light mb-11">Projets</h2>
             <div className="flex flex-col grid grid-cols-1 sm:grid-col md:grid-col lg:grid-col gap-10 ">
@@ -137,7 +145,7 @@ function App() {
           <Timeline />
         </section>
         {/* CONTACT SECTION */}
-        <section id="contact" className="p-5 mb-5">
+        <section id="contact" className="p-5 ">
           <div className="container m-auto px-4">
             <h2 className="text-4xl font-light">Contact</h2>
           </div>
