@@ -13,11 +13,10 @@ function Contact() {
       })
       .then(
         () => {
-          console.log(result.text);
-          console.log("Message sent!");
+          console.log("Message envoyé!");
         },
         (error) => {
-          console.log("Failed...", error.text);
+          console.log("Echec...", error.text);
         }
       );
   };
@@ -29,7 +28,7 @@ function Contact() {
         onSubmit={sendEmail}
         className="flex flex-start flex-col w-[100%] text-lg"
       >
-        <label>Name</label>
+        <label>Nom</label>
         <input type="text" name="user_name" className="border b-black" />
         <label>Email</label>
         <input type="email" name="user_email" className="border b-black" />
@@ -37,8 +36,8 @@ function Contact() {
         <textarea name="message" className="border b-black" />
         <input
           type="submit"
-          value="Send"
-          className="border p-2 m-2 text-white bg-black hover:bg-gray-700 hover:cursor-pointer"
+          value="Envoyer"
+          className="border p-2 my-2 text-white bg-black hover:bg-gray-700 hover:cursor-pointer"
         />
       </form>
     </div>

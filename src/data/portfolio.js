@@ -1,0 +1,42 @@
+export default [
+    {
+        title: "Site de référencement de cinéma",
+        description: "Site d'informations et l'actualité des films et séries, à l'aide de la base de données The Movie Database.",
+        imgUrl: "./assets/project-movie-website-1.png",
+        stack:["HTML", "CSS", "JavaScript", "API"],
+        linkGit: "https://github.com/apolline-diaz/Search-Movie-App",
+        linkDemo: "https://apolline-diaz.github.io/Search-Movie-App/",
+    },
+    {
+        title: "Plateforme e-commerce",
+        description: "Plateforme de vente en ligne de meubles d'occasion, interagissant avec une base de données.",
+        imgUrl: "./assets/project-plateforme.png",
+        stack:["HTML", "CSS", "JavaScript", "React", "Express", "MySQL", "Sequelize"],
+        linkGit: "https://github.com/apolline-diaz/E-Shop-Website-Second-hand-furniture-Adopteunmeuble",
+        linkDemo: "https://vimeo.com/924123048?share=copy",
+    },
+    {
+        title: "Extension Chrome",
+        description: "Extension Chrome qui transforme l'espace Nouvel onglet avec l'univers du studio Ghibli, avec des fonctionnalités supplémentaires.",
+        imgUrl: "./assets/project-extension.png",
+        stack:["HTML", "CSS", "JavaScript", "API"],
+        linkGit: "https://github.com/apolline-diaz/Ghibli-New-Tab-Browser-Extension",
+        linkDemo: "https://vimeo.com/927429709?share=copy",
+    },
+    {
+        title: "Datavisualisation",
+        description: "Page web affichant les différences de productions d'électricité des pays en Europe, à partir de l'API Electricity Maps.",
+        imgUrl: "./assets/project-datavisualisation.png",
+        stack:["HTML", "CSS", "JavaScript", "API"],
+        linkGit: "https://github.com/apolline-diaz/Datavisualisation-API-Electricity-Maps",
+        linkDemo: "",
+    },
+    {
+        title: "Jeu vidéo Pico 8",
+        description: "Ebauche de jeu vidéo de plateforme sur la console imaginaire Pico 8.",
+        imgUrl: "./assets/project-pico.png",
+        stack:["Lua"],
+        linkGit: "https://github.com/apolline-diaz/Datavisualisation-API-Electricity-Maps",
+        linkDemo: "https://apolline-diaz.github.io/Search-Movie-App/",
+    },
+]
