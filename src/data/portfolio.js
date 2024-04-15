@@ -36,5 +36,6 @@ export default [
         imgUrl: "./assets/project-pico.png",
         stack:["Lua"],
         linkGit: "https://github.com/apolline-diaz/Pico-8-Video-game",
+        linkDemo: "https://vimeo.com/927425518",
     },
 ]
