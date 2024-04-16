@@ -5,7 +5,7 @@ import TimelineItem from "../components/TimelineItem.jsx";
 function Timeline() {
   return (
     <div className="flex flex-col md:flex-row container m-auto px-5">
-      <div className="w-full md:w-7/12">
+      <div className="w-full">
         {timeline.map((item) => (
           <TimelineItem
             year={item.year}

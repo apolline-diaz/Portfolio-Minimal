@@ -1,7 +1,7 @@
 export default [
     {
         title: "Site de référencement de cinéma",
-        description: "Site d'informations et l'actualité des films et séries, à l'aide de la base de données The Movie Database.",
+        description: "Projet personnel (en cours) de création d'un site mettant en avant l'actualité des films et séries, à partir de la base de données The Movie Database.",
         imgUrl: "./assets/project-movie-website-1.png",
         stack:["HTML", "CSS", "JavaScript", "API"],
         linkGit: "https://github.com/apolline-diaz/Search-Movie-App",
@@ -25,7 +25,7 @@ export default [
     },
     {
         title: "Datavisualisation",
-        description: "Page web affichant les différences de productions d'électricité des pays en Europe, à partir de l'API Electricity Maps.",
+        description: "Page web affichant les différences de productions d'électricité des pays en Europe, à partir de l'API Electricity Maps. Démo indisponible (API expirée)",
         imgUrl: "./assets/project-datavisualisation.png",
         stack:["HTML", "CSS", "JavaScript", "API"],
         linkGit: "https://github.com/apolline-diaz/Datavisualisation-API-Electricity-Maps",

@@ -85,11 +85,11 @@ function App() {
                 I'm Apolline Diaz
               </h2>
               <div>
-                <h2 className="font-bold text-2xl sm:text-2xl md:text-4xl">
+                <h2 className="font-bold text-2xl sm:text-2xl md:text-3xl">
                   Développeuse full stack
                 </h2>
               </div>
-              <p className="font-light text-xl sm:text-xl md:text-l md:text-xl lg:text-2xl gradient-text running-text">
+              <p className="font-light text-xl sm:text-l md:text-xl lg:text-2xl gradient-text running-text">
                 En recherche d'alternance dès septembre
               </p>
               <div>
@@ -99,8 +99,7 @@ function App() {
                   le milieu du cinéma. Je développe des projets orientés
                   front-end, en autodidacte. J'aime travailler en équipe et
                   continuer à apprendre de nouvelles technologies, grâce à ma
-                  formation à Ada Tech School. Bonne visite!
-                  <br />
+                  formation à Ada Tech School.
                 </p>
               </div>
               <div className="space-x-3 flex flex-cols">
@@ -145,14 +144,20 @@ function App() {
         </section>
         {/* PROJECTS SECTION */}
         <section id="projects" className="p-5">
-          <div className="container  m-auto px-4 mb-10">
+          <div className="container  m-auto px-4">
             <h2 className="text-4xl font-light my-5">Projets</h2>
-            <div className="grid grid-cols-1 sm:grid-col md:grid-col lg:grid-col gap-10 ">
+            <p className="border border-gray p-2 text-justify mb-5">
+              Chaque nouveau projet est une opportunité de prendre en main une
+              nouvelle technologie, se l'approprier et en exploiter son
+              potentiel. Je me consacre autant à la conception et l'amélioration
+              du design qu'à la construction de l'architecture des sites et le
+              traitement des bases de données. Avant de faire la déco d'une
+              maison, il ne faut pas oublier ses fondements!
+            </p>
+            <div className="grid grid-cols-1 sm:grid-col md:grid-col lg:grid-col gap-10">
               <Portfolio />
             </div>
-          </div>
-          <div className="px-4">
-            <h3 className="text-2xl">Compétences</h3>
+            <h2 className="text-2xl font-light my-5">Compétences techniques</h2>
             <Skills />
           </div>
         </section>
@@ -160,6 +165,26 @@ function App() {
         <section id="experience" className="p-5">
           <div className="container m-auto px-4 mb-10">
             <h2 className="text-4xl font-light my-5">Expérience</h2>
+            <p className="border border-gray p-2 text-justify">
+              Pendant mes années dans les salles de cinéma, j'avais une autre
+              passion : partager des films peu connus du grand public, et
+              trouver des moyens de les rendre plus accessibles. Internet était
+              mon terrain de jeu pour explorer les trésors cachés du cinéma.{" "}
+              <br />
+              Jetez-un oeil à mon{" "}
+              <a
+                onClick={() =>
+                  window.open(
+                    "./assets/Portfolio_Apolline_Lawrens_Diaz.pdf",
+                    "_blank"
+                  )
+                }
+                className="bg-black text-white font-light  p-1 transition duration-200 hover:opacity-50 cursor-pointer"
+              >
+                portfolio
+              </a>{" "}
+              !
+            </p>
           </div>
           <Timeline />
         </section>

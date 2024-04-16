@@ -7,7 +7,7 @@ import tailwind from "/assets/tailwind.png";
 
 function Skills() {
   return (
-    <div id="skills" className="flex flex-col justify-left space-y-2">
+    <div id="skills" className="flex flex-col justify-center space-y-2">
       <div className="flex flex-wrap space-2">
         <div className="flex flex-col items-left mb-2 mr-2">
           <h2 className="border bg-black text-white p-2 my-2">Front-end</h2>
