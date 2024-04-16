@@ -93,7 +93,7 @@ function App() {
                 En recherche d'alternance
               </p>
               <div>
-                <p className="font-light text-l sm:text-md md:text-xl lg:text-2xl w-50 max-w-3xl mb-2">
+                <p className="font-light text-l sm:text-md md:text-xl w-75 max-w-3xl mb-2">
                   Passionnée par la création audiovisuelle et multimédia, je me
                   suis lancée dans le développement, après plusieurs années dans
                   le milieu du cinéma. Je développe des projets orientés
