@@ -90,7 +90,7 @@ function App() {
                 </h2>
               </div>
               <p className="font-light text-xl sm:text-l md:text-xl lg:text-2xl gradient-text running-text">
-                En recherche d'alternance dès septembre
+                En recherche d'alternance
               </p>
               <div>
                 <p className="font-light text-l sm:text-md md:text-xl lg:text-2xl w-50 max-w-3xl mb-2">
