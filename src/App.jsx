@@ -79,22 +79,28 @@ function App() {
         {/* HOME SECTION */}
         <section id="home" className="h-full w-full">
           <div className='bg-[url("/assets/home_background.png")] h-screen w-full bg-cover bg-center'>
-            <div className="container text-left m-auto px-9 py-20 flex flex-col gap-6">
-              <h2 className="font-light text-4xl md:text-5xl xl:text-6xl">
+            <div className="container text-left m-auto px-9 py-20 flex flex-col gap-2">
+              <h2 className="font-light text-4xl md:text-5xl xl:text-6xl mb-3">
                 Hello, <br />
                 I'm Apolline Diaz
               </h2>
               <div>
-                <h2 className="font-bold text-2xl sm:text-2xl md:text-4xl gradient-text running-text flex flex-wrap">
-                  développeuse full stack
+                <h2 className="font-bold text-2xl sm:text-2xl md:text-4xl">
+                  Développeuse full stack
                 </h2>
               </div>
+              <p className="font-light text-xl sm:text-xl md:text-l md:text-xl lg:text-2xl gradient-text running-text">
+                En recherche d'alternance dès septembre
+              </p>
               <div>
-                <p className="font-light text-xl sm:text-l md:text-xl lg:text-2xl w-50 max-w-2xl">
+                <p className="font-light text-l sm:text-md md:text-xl lg:text-2xl w-50 max-w-3xl mb-2">
                   Passionnée par la création audiovisuelle et multimédia, je me
                   suis lancée dans le développement, après plusieurs années dans
-                  le milieu du cinéma. Je développe des projets orientés sur le
-                  front-end.
+                  le milieu du cinéma. Je développe des projets orientés
+                  front-end, en autodidacte. J'aime travailler en équipe et
+                  continuer à apprendre de nouvelles technologies, grâce à ma
+                  formation à Ada Tech School. Bonne visite!
+                  <br />
                 </p>
               </div>
               <div className="space-x-3 flex flex-cols">
@@ -119,6 +125,17 @@ function App() {
                   <img
                     src={Github}
                     alt="Github"
+                    className="cursor-pointe w-10 h-10 transition duration-200 hover:opacity-50"
+                  />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/apolline-diaz-938783153/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={LinkedIn}
+                    alt="LinkedIn"
                     className="cursor-pointe w-10 h-10 transition duration-200 hover:opacity-50"
                   />
                 </a>
