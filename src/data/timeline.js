@@ -1,9 +1,9 @@
 export default[
     {
-        year: '2023',
-        title:'Développeur Full Stack',
-        duration: '2 ans',
-        details: 'Ada Tech School (formation en cours)',
+        year: '2022',
+        title:'Projectionniste',
+        duration: '1 an et demi',
+        details: 'Cinémas Etoile Cosmos et Le Saint-André-des-Arts',
     },
     {
         year: '2020',
@@ -18,21 +18,9 @@ export default[
         details: 'Cinéma L\'Entrepôt',
     },
     {
-        year: '2018',
-        title:'Master Théorie, esthétique et mémoire du cinéma',
-        duration: '2 ans',
-        details: 'Université Paris 8 Vincennes - Saint-Denis',
-    },
-    {
         year: '2017',
         title:'Service Civique - Assistante en programmation et actions Jeune Public',
         duration: '8 mois',
         details: 'ACID (Association du Cinéma Indépendant pour sa Diffusion)',
-    },
-    {
-        year: '2014',
-        title:'Licence Cinéma-Audiovisuel',
-        duration: '3 ans',
-        details: 'Université Paris 3 Sorbonne Nouvelle',
     },
 ]

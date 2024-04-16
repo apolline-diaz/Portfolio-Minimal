@@ -20,7 +20,7 @@ body{
   -webkit-background-clip: text;
   @apply bg-gradient-to-t text-transparent;
   overflow: hidden;
-  border-right: 2px solid #fff;
+  /* border-right: 2px solid #fff; */
   animation: typing-text steps(40) 3s infinite, blink ease 0.3s infinite;
   text-wrap: nowrap;
   display: inline-block;
@@ -33,7 +33,7 @@ body{
     width: 0%;
   }
   to{
-    width: 580px;
+    width: 100%;
   }
 }
 

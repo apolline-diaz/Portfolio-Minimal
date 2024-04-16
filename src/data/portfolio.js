@@ -17,7 +17,7 @@ export default [
     },
     {
         title: "Extension Chrome",
-        description: "Extension Chrome qui transforme l'espace Nouvel onglet avec l'univers du studio Ghibli, avec des fonctionnalités supplémentaires.",
+        description: "L'espace de Nouvel onglet est transformé avec l'univers du studio Ghibli, dotée d'outils (To Do List, météo, etc.).",
         imgUrl: "./assets/project-extension.png",
         stack:["HTML", "CSS", "JavaScript", "API"],
         linkGit: "https://github.com/apolline-diaz/Ghibli-New-Tab-Browser-Extension",
@@ -32,10 +32,18 @@ export default [
     },
     {
         title: "Jeu vidéo Pico 8",
-        description: "Ebauche de jeu vidéo de plateforme sur la console imaginaire Pico 8.",
+        description: "Ebauche de jeu vidéo de plateforme sur la console Pico 8. Le concept : un citron doit cueillir les fruits de saison.",
         imgUrl: "./assets/project-pico.png",
         stack:["Lua"],
         linkGit: "https://github.com/apolline-diaz/Pico-8-Video-game",
         linkDemo: "https://vimeo.com/927425518",
+    },
+    {
+        title: "Jeu vidéo Pico 8 Spécial Anniversaire",
+        description: "Projet personnel pour un anniversaire. Le concept : éliminer 28 chatons pour découvrir son cadeau.",
+        imgUrl: "./assets/project-pico-anniversaire.png",
+        stack:["Lua"],
+        linkGit: "",
+        linkDemo: "https://lawrens-shyboi.itch.io/queen-of-bad-bitches",
     },
 ]

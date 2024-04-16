@@ -17,12 +17,12 @@ function Skills() {
             <span className="border bg-white b-black p-2  mb-2">
               JavaScript
             </span>
-            <span className="border bg-white b-black p-2 mb-2">React</span>
+            <span className="border bg-white b-black p-2 mb-2 ">React</span>
             <span className="border bg-white b-black p-2 mb-2">Vite</span>
             <span className="border bg-white b-black p-2 mb-2">Tailwind</span>
           </div>
         </div>
-        <div className="flex flex-col items-left mb-2">
+        <div className="flex flex-col items-left mb-2 mr-2">
           <h2 className="border bg-black text-white p-2 my-2">Back-end</h2>
           <div className="flex flex-wrap justify-between space-x-1">
             <span className="border bg-white b-black p-2 mb-2">Node</span>
@@ -30,15 +30,13 @@ function Skills() {
             <span className="border bg-white b-black p-2 mb-2">MySQL</span>
           </div>
         </div>
-      </div>
-      <div className="flex flex-row items-center space-x-2">
-        <h2 className="border bg-gray-400 border-black text-white p-2">
-          Les +
-        </h2>
-        <div className="flex flex-row justify-between space-x-2">
-          <span className="border b-black p-2">Github</span>
-          <span className="border b-black p-2">Figma</span>
-          <span className="border b-black p-2">Jira</span>
+        <div className="flex flex-col items-left mb-2">
+          <h2 className="border bg-gray-400 text-white p-2 my-2">Les +</h2>
+          <div className="flex flex-row justify-between space-x-2">
+            <span className="border b-black p-2 mb-2">Github</span>
+            <span className="border b-black p-2 mb-2">Figma</span>
+            <span className="border b-black p-2 mb-2">Jira</span>
+          </div>
         </div>
       </div>
     </div>

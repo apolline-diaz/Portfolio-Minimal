@@ -80,17 +80,17 @@ function App() {
         <section id="home" className="h-full w-full">
           <div className='bg-[url("/assets/home_background.png")] h-screen w-full bg-cover bg-center'>
             <div className="container text-left m-auto px-9 py-20 flex flex-col gap-6">
-              <h2 className="font-light text-6xl">
+              <h2 className="font-light text-4xl md:text-5xl xl:text-6xl">
                 Hello, <br />
                 I'm Apolline Diaz
               </h2>
               <div>
-                <h2 className="font-bold text-5xl gradient-text running-text flex flex-wrap">
+                <h2 className="font-bold text-2xl sm:text-2xl md:text-4xl gradient-text running-text flex flex-wrap">
                   développeuse full stack
                 </h2>
               </div>
               <div>
-                <p className="font-light text-2xl w-50 max-w-2xl">
+                <p className="font-light text-xl sm:text-l md:text-xl lg:text-2xl w-50 max-w-2xl">
                   Passionnée par la création audiovisuelle et multimédia, je me
                   suis lancée dans le développement, après plusieurs années dans
                   le milieu du cinéma. Je développe des projets orientés sur le
@@ -127,25 +127,28 @@ function App() {
           </div>
         </section>
         {/* PROJECTS SECTION */}
-        <section id="projects" className="p-5  mb-5">
-          <div className="container  m-auto px-4 sm:py-12">
-            <h2 className="text-4xl font-light mb-11">Projets</h2>
-            <div className="flex flex-col grid grid-cols-1 sm:grid-col md:grid-col lg:grid-col gap-10 ">
+        <section id="projects" className="p-5">
+          <div className="container  m-auto px-4 mb-10">
+            <h2 className="text-4xl font-light my-5">Projets</h2>
+            <div className="grid grid-cols-1 sm:grid-col md:grid-col lg:grid-col gap-10 ">
               <Portfolio />
             </div>
           </div>
+          <div className="px-4">
+            <h3 className="text-2xl">Compétences</h3>
+            <Skills />
+          </div>
         </section>
         {/* EXPERIENCE SECTION */}
-        <section id="experience" className="p-5 mb-5">
+        <section id="experience" className="p-5">
           <div className="container m-auto px-4 mb-10">
-            <h2 className="text-4xl font-light mb-11">Expérience</h2>
-            <Skills />
+            <h2 className="text-4xl font-light my-5">Expérience</h2>
           </div>
           <Timeline />
         </section>
         {/* CONTACT SECTION */}
         <section id="contact" className="p-5">
-          <div className="container m-auto px-4">
+          <div className="container m-auto px-4 mb-10">
             <h2 className="text-4xl font-light">Contact</h2>
           </div>
           <Contact />
