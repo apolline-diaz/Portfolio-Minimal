@@ -1,5 +1,11 @@
 export default[
     {
+        year: '2023',
+        title:'Développeur web et applications mobiles',
+        duration: '2 ans',
+        details: 'Ada Tech School (en cours de formation)',
+    },
+    {
         year: '2022',
         title:'Projectionniste',
         duration: '1 an et demi',
@@ -19,8 +25,8 @@ export default[
     },
     {
         year: '2017',
-        title:'Service Civique - Assistante en programmation et actions Jeune Public',
+        title:'Assistante en programmation et actions Jeune Public',
         duration: '8 mois',
-        details: 'ACID (Association du Cinéma Indépendant pour sa Diffusion)',
+        details: 'ACID (Association du Cinéma Indépendant pour sa Diffusion) / Festival de Cannes',
     },
 ]

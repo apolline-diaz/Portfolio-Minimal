@@ -1,8 +1,9 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 function Contact() {
   const form = useRef();
+  const [messageSent, setMessageSent] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -13,6 +14,7 @@ function Contact() {
       })
       .then(
         () => {
+          setMessageSent(true);
           console.log("Message envoyé!");
         },
         (error) => {
@@ -40,6 +42,7 @@ function Contact() {
           className="border p-2 my-2 text-white bg-black hover:bg-gray-700 hover:cursor-pointer"
         />
       </form>
+      {messageSent && <p>Message envoyé!</p>}
     </div>
   );
 }

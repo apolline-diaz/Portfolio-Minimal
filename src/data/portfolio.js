@@ -40,7 +40,7 @@ export default [
     },
     {
         title: "Jeu vidéo Pico 8 Spécial Anniversaire",
-        description: "Projet personnel pour un anniversaire. Le concept : éliminer 28 chatons pour découvrir son cadeau.",
+        description: "Projet personnel pour un anniversaire. Le concept : éliminer 27 chatons pour découvrir son cadeau.",
         imgUrl: "./assets/project-pico-anniversaire.png",
         stack:["Lua"],
         linkGit: "",
