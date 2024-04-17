@@ -1,12 +1,20 @@
 export default [
     {
         title: "Site de référencement de cinéma",
-        description: "Projet personnel (en cours) de création d'un site mettant en avant l'actualité des films et séries, à partir de la base de données The Movie Database.",
-        imgUrl: "./assets/project-movie-website-1.png",
-        stack:["HTML", "CSS", "JavaScript", "API"],
-        linkGit: "https://github.com/apolline-diaz/Search-Movie-App",
-        linkDemo: "https://apolline-diaz.github.io/Search-Movie-App/",
+        description: "Projet personnel (en cours) de refonte d'un premier projet de site d'actualité cinéma, cette fois en React, Tailwind et avec MongoDB.",
+        imgUrl: "./assets/project-movie-app.png",
+        stack:["HTML", "CSS", "React", "Tailwind", "MongoDB", "API"],
+        linkGit: "https://github.com/apolline-diaz/Movie-App",
+        linkDemo: "https://apolline-diaz.github.io/Movie-App",
     },
+    // {
+    //     title: "Site de référencement de cinéma",
+    //     description: "Ebauche d'un site mettant en avant l'actualité des films et séries, à partir de la base de données The Movie Database.",
+    //     imgUrl: "./assets/project-movie-website-1.png",
+    //     stack:["HTML", "CSS", "JavaScript", "API"],
+    //     linkGit: "https://github.com/apolline-diaz/Search-Movie-App",
+    //     linkDemo: "https://apolline-diaz.github.io/Search-Movie-App/",
+    // },
     {
         title: "Plateforme e-commerce",
         description: "Plateforme de vente en ligne de meubles d'occasion, interagissant avec une base de données.",
