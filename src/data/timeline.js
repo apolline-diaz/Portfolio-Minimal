@@ -13,7 +13,7 @@ export default[
     },
     {
         year: '2020',
-        title:'Programmatrice indépendante',
+        title:'Programmatrice indépendante et organisatrice d\'événements',
         duration: '3 ans',
         details: 'Festivals, collectifs et salles de cinémas',
     },
