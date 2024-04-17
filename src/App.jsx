@@ -1,15 +1,11 @@
 import { useState } from "react";
 import "./App.css";
+import Navbar from "./components/Navbar.jsx";
 import Timeline from "./components/Timeline.jsx";
 import Skills from "./components/Skills.jsx";
 import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer.jsx";
 import Portfolio from "./components/Portfolio.jsx";
-import Project1 from "/assets/project-movie-website-1.png";
-import Project2 from "/assets/project-plateforme.png";
-import Project3 from "/assets/project-extension.png";
-import Project4 from "/assets/project-datavisualisation.png";
-import Project5 from "/assets/project-pico.png";
 import LinkedIn from "/assets/linkedin.png";
 import Github from "/assets/github.png";
 
@@ -18,63 +14,8 @@ function App() {
 
   return (
     <>
-      <header class="fixed backdrop-blur-sm w-[100%] scroll-smooth">
-        <div className="container m-auto px-4 py-6">
-          <div className="flex justify-between items-center h-1 ">
-            <div>
-              <a href="#home">
-                <h1 className="px-5 font-medium text-xl transition duration-200 hover:opacity-50 cursor-pointer">
-                  Apolline Diaz
-                </h1>
-              </a>
-            </div>
-            <div>
-              <ul className="flex gap-4 transition-all ease-in-out duration-200 text-l px-5">
-                <li>
-                  <a
-                    className="font-medium transition duration-200 hover:opacity-50 cursor-pointer"
-                    href="#home"
-                  >
-                    À propos
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="font-medium transition duration-200 hover:opacity-50 cursor-pointer"
-                    href="#projects"
-                  >
-                    Projets
-                  </a>
-                </li>
-                {/* <li>
-                  <a
-                    className="font-medium transition duration-200 hover:opacity-50 cursor-pointer"
-                    href="#skills"
-                  >
-                    Compétences
-                  </a>
-                </li> */}
-                <li>
-                  <a
-                    className="font-medium transition duration-200 hover:opacity-50 cursor-pointer"
-                    href="#experience"
-                  >
-                    Expérience
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="font-medium transition duration-200 hover:opacity-50 cursor-pointer"
-                    href="#contact"
-                  >
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </header>
+      {/* NAVBAR SECTION */}
+      <Navbar />
       <main>
         {/* HOME SECTION */}
         <section id="home" className="h-full w-full">
