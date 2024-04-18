@@ -1,9 +1,9 @@
 export default [
     {
         title: "Site de référencement de cinéma",
-        description: "Projet personnel (en cours) de refonte d'un premier projet de site d'actualité cinéma, cette fois en React, Tailwind et avec MongoDB.",
+        description: "Projet personnel (en cours) de refonte d'un premier projet de site d'actualité cinéma, cette fois en React, Tailwind et avec MySQL.",
         imgUrl: "./assets/project-movie-app.png",
-        stack:["HTML", "CSS", "React", "Tailwind", "MongoDB", "API"],
+        stack:["HTML", "CSS", "React", "Tailwind", "MySQL", "API"],
         linkGit: "https://github.com/apolline-diaz/Movie-App",
         linkDemo: "https://apolline-diaz.github.io/Movie-App",
     },

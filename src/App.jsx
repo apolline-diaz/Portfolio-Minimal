@@ -43,7 +43,7 @@ function App() {
                   formation à Ada Tech School.
                 </p>
               </div>
-              <div className="space-x-3 flex flex-cols">
+              <div className="space-x-3 flex flex-cols items-center">
                 <button
                   onClick={() =>
                     window.open("./assets/CV-ApollineDiaz.pdf", "_blank")
@@ -65,7 +65,7 @@ function App() {
                   <img
                     src={Github}
                     alt="Github"
-                    className="cursor-pointe w-10 h-10 transition duration-200 hover:opacity-50"
+                    className="cursor-pointer  w-8 h-8 transition duration-200 hover:opacity-50 "
                   />
                 </a>
                 <a
@@ -76,7 +76,7 @@ function App() {
                   <img
                     src={LinkedIn}
                     alt="LinkedIn"
-                    className="cursor-pointe w-10 h-10 transition duration-200 hover:opacity-50"
+                    className="cursor-pointer w-8 h-8 transition duration-200 hover:opacity-50"
                   />
                 </a>
               </div>
@@ -87,7 +87,7 @@ function App() {
         <section id="projects" className="p-5">
           <div className="container  m-auto px-4">
             <h2 className="text-4xl font-light my-5">Projets</h2>
-            <p className="border border-gray p-2 text-justify mb-5">
+            <p className="text-base md:text-lg border border-gray p-2 text-justify mb-5">
               Chaque nouveau projet est une opportunité de prendre en main une
               nouvelle technologie, se l'approprier et en exploiter son
               potentiel. Je me consacre autant à la conception et l'amélioration
@@ -106,7 +106,7 @@ function App() {
         <section id="experience" className="p-5">
           <div className="container m-auto px-4 mb-10">
             <h2 className="text-4xl font-light my-5">Expérience</h2>
-            <p className="border border-gray p-2 text-justify">
+            <p className="text-base md:text-lg border border-gray p-2 text-justify">
               Pendant mes années dans les salles de cinéma, j'avais une autre
               passion : partager des films peu connus du grand public, et
               trouver des moyens de les rendre plus accessibles. Internet était
