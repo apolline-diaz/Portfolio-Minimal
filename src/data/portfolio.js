@@ -51,7 +51,7 @@ export default [
         description: "Projet personnel pour un anniversaire. Le concept : éliminer 27 chatons pour découvrir son cadeau.",
         imgUrl: "./assets/project-pico-anniversaire.png",
         stack:["Lua"],
-        linkGit: "",
+        linkGit: "https://github.com/apolline-diaz/Pico-8-Shooter-Birthday-Video-Game",
         linkDemo: "https://lawrens-shyboi.itch.io/queen-of-bad-bitches",
     },
 ]

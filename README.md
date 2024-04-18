@@ -32,10 +32,16 @@ Je pourrais encore l'améliorer pour le format mobile, j'ai encore à apprendre,
 
 Le lien vers le portfolio est juste ici : https://apolline-diaz.github.io/Portfolio-Minimal/
 
-/!\ Attention, certaines démo et Github ne sont pas disponibles :
+/!\ Attention, certaines démos ne sont pas disponibles :
 
 - Datavisualisation : la clé API a expirée je ne peux plus lancer la requête
 
-- Jeu vidéo Pico 8 Spécial anniversaire : je n'ai pas encore transféré le code qui était sur un autre espace de stockage, mais vous pouvez jouer au jouer ! C'était à l'occasion d'un anniversaire d'une amie, alors amusez-vous bien!
+MAIS vous pouvez découvrir toutes les autres démos !
+
+N'hésitez pas à cliquer sur le bouton " démo " des projets pour accéder au projet déployé via Github Pages.
+
+Certaines démos renvoient directement à des vidéos où je navigue sur le site ou j'interagis avec les différentes fonctions de l'extension, par exemple. Dans ces cas-ci, nous n'avons pas encore pu les déployer, car soit le code n'est pas assez aboutit, ou pour le cas de l'extension, il nous manque une dernière étape avant la mise en ligne (rédiger les règles de confidentialité).
+
+Vous pouvez quand même vous amusez à jouer au jeu vidéo spécial anniversaire que j'avais conçu pour une amie ! C'est un shooter dans l'espace, allez faire un tour dessus, et tentez d'éliminer tous les chats, pour avoir votre cadeau.
 
 Bonne visite !
