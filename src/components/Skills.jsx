@@ -32,7 +32,7 @@ function Skills() {
           <h2 className="border bg-gray-400 text-white p-2 my-2">
             J'ai aussi travaillé avec
           </h2>
-          <div className="text-base flex flex-row justify-between space-x-2">
+          <div className="text-base flex flex-wrap justify-between space-x-2">
             <span className="border b-black p-3 mb-2">Github</span>
             <span className="border b-black p-3 mb-2">Figma</span>
             <span className="border b-black p-3 mb-2">Jira</span>
