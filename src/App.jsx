@@ -20,7 +20,7 @@ function App() {
         {/* HOME SECTION */}
         <section id="home" className="h-full w-full">
           <div className='bg-[url("/assets/home_background.png")] h-screen w-full bg-cover bg-center'>
-            <div className="container text-left m-auto px-9 py-20 flex flex-col gap-2">
+            <div className="container justify-center px-5 py-20 text-left m-auto flex flex-col gap-2">
               <h2 className="font-light text-4xl md:text-5xl xl:text-6xl mb-3">
                 Hello, <br />
                 I'm Apolline Diaz
@@ -30,9 +30,12 @@ function App() {
                   Développeuse full stack
                 </h2>
               </div>
-              <p className="font-light text-xl sm:text-l md:text-xl lg:text-2xl gradient-text running-text">
+              <p className="font-medium text-xl sm:text-l md:text-xl lg:text-2xl">
                 En recherche d'alternance
               </p>
+              {/* <p className="font-light text-xl sm:text-l md:text-xl lg:text-2xl gradient-text running-text">
+                En recherche d'alternance
+              </p> */}
               <div>
                 <p className="font-light text-l sm:text-md md:text-xl w-50 max-w-4xl mb-2">
                   Passionnée par la création audiovisuelle et multimédia, je me
