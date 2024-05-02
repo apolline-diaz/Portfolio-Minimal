@@ -17,14 +17,14 @@ function Skills() {
             <span className="border b-black p-3 mb-2">Tailwind CSS</span>
             <span className="border b-black p-3 mb-2">JavaScript</span>
             <span className="border b-black p-3 mb-2 ">React JS</span>
-            <span className="border b-black p-3 mb-2">Vite</span>
+            <span className="border b-black p-3 mb-2">Vite JS</span>
           </div>
         </div>
         <div className="flex flex-col items-left mb-2 mr-2">
           <h2 className="border bg-black text-white p-2 my-2">Back-end</h2>
           <div className="text-base flex flex-col sm:flex-wrap md:flex-col justify-between">
             <span className="border b-black p-3 mb-2">Node JS</span>
-            <span className="border b-black p-3 mb-2">Node Express</span>
+            <span className="border b-black p-3 mb-2">Express JS</span>
             <span className="border b-black p-3 mb-2">MySQL</span>
             <span className="border b-black p-3 mb-2">PostgreSQL</span>
           </div>
