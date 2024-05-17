@@ -28,7 +28,7 @@ function Contact() {
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="flex flex-start flex-col sm:w-full md:w-[50%] text-lg"
+        className="flex flex-start flex-col sm:w-full md:w-[75%] text-lg"
       >
         <label>Nom</label>
         <input type="text" name="user_name" className="border b-black" />

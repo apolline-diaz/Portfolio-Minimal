@@ -4,8 +4,8 @@ import PortfolioItem from "../components/PortfolioItem.jsx";
 
 function Portfolio() {
   return (
-    <div className="max-w-[1200px] mx-auto">
-      <div className="grid sm:grid-cols-2 md:grid-cols-2 gap-4">
+    <div className="max-w-[700px] mx-auto">
+      <div className="grid grid-col gap-4">
         {portfolio.map((project) => (
           <PortfolioItem
             imgUrl={project.imgUrl}

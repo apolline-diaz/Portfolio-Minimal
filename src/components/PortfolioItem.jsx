@@ -10,7 +10,7 @@ function PortfolioItem({
 }) {
   return (
     <div className="transform transition-transform duration-300 hover:scale-105 overflow-hidden group container flex justify-center items-center mx-auto content-div bg-cover relative">
-      <img src={imgUrl} />
+      <img className="" src={imgUrl} />
       <div className="opacity-0 group-hover:opacity-90 bg-[black]/90 absolute inset-0 flex flex-col justify-center items-center">
         <span className="text-white tracking-wider text-center p-4 sm:p-2">
           <h3 className="text-l sm:text-xs md:text-sm lg:text-xl font-medium mb-1">

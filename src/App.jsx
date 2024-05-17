@@ -20,7 +20,7 @@ function App() {
         {/* HOME SECTION */}
         <section id="home" className="h-full w-full">
           <div className='bg-[url("/assets/home_background.png")] h-screen w-full bg-cover bg-center'>
-            <div className="container justify-center px-5 py-20 text-left m-auto flex flex-col gap-2">
+            <div className="container justify-center max-w-[700px] mx-auto px-5 py-20 text-left m-auto flex flex-col gap-2">
               <h2 className="font-light text-4xl md:text-5xl xl:text-6xl mb-3">
                 Hello, <br />
                 I'm Apolline Diaz
@@ -30,9 +30,9 @@ function App() {
                   Développeuse full stack
                 </h2>
               </div>
-              <p className="font-medium text-xl sm:text-l md:text-xl lg:text-2xl">
+              {/* <p className="font-medium text-xl sm:text-l md:text-xl lg:text-2xl">
                 En recherche d'alternance
-              </p>
+              </p> */}
               {/* <p className="font-light text-xl sm:text-l md:text-xl lg:text-2xl gradient-text running-text">
                 En recherche d'alternance
               </p> */}
@@ -58,11 +58,11 @@ function App() {
                 >
                   CV
                 </button>
-                <a href="mailto:apolline.diaz@gmail.com">
+                {/* <a href="mailto:apolline.diaz@gmail.com">
                   <button className="bg-black text-white font-light p-2 transition duration-200 hover:opacity-50">
                     Contact
                   </button>
-                </a>
+                </a> */}
                 <a
                   href="https://github.com/apolline-diaz"
                   target="_blank"
@@ -90,10 +90,13 @@ function App() {
           </div>
         </section>
         {/* PROJECTS SECTION */}
-        <section id="projects" className="p-5">
+        <section
+          id="projects"
+          className="p-5 justify-center items-center max-w-[700px] mx-auto"
+        >
           <div className="container  m-auto px-4">
             <h2 className="text-4xl font-light my-5">Projets</h2>
-            <p className="text-base md:text-lg border border-gray p-2 text-justify mb-5">
+            <p className="text-base md:text-lg text-justify mb-5">
               Chaque nouveau projet est une opportunité de prendre en main une
               nouvelle technologie, se l'approprier et en exploiter son
               potentiel. Je me consacre autant à la conception et l'amélioration
@@ -109,10 +112,10 @@ function App() {
           </div>
         </section>
         {/* EXPERIENCE SECTION */}
-        <section id="experience" className="p-5">
+        <section id="experience" className="p-5 max-w-[700px] mx-auto">
           <div className="container m-auto px-4 mb-10">
             <h2 className="text-4xl font-light my-5">Expérience</h2>
-            <p className="text-base md:text-lg border border-gray p-2 text-justify">
+            <p className="text-base md:text-lg text-justify">
               Pendant mes années dans les salles de cinéma, j'avais une autre
               passion : partager des films peu connus du grand public, et
               trouver des moyens de les rendre plus accessibles. Internet était
@@ -136,7 +139,7 @@ function App() {
           <Timeline />
         </section>
         {/* CONTACT SECTION */}
-        <section id="contact" className="p-5">
+        <section id="contact" className="p-5 max-w-[700px] mx-auto">
           <div className="container m-auto px-4 mb-10">
             <h2 className="text-4xl font-light">Contact</h2>
           </div>
