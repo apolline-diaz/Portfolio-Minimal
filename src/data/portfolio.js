@@ -1,5 +1,13 @@
 export default [
     {
+        title: "Application mobile",
+        description: "Application  sur Android (en cours) qui permet de découvrir des spots urbains insolites ou faire de belles photos. A partager avec sa communauté !",
+        imgUrl: "./assets/project-app-mobile.png",
+        stack:["Kotlin", "Spring Boot"],
+        linkGit: "https://github.com/apolline-diaz/App-mobile-Android-Urbanspots",
+        linkDemo: "",
+    },
+    {
         title: "Site de référencement de cinéma",
         description: "Projet personnel (en cours) de refonte d'un premier projet de site d'actualité cinéma, cette fois en React, Tailwind et avec MySQL.",
         imgUrl: "./assets/project-movie-app.png",
