@@ -39,7 +39,7 @@ function Skills() {
         </div>
         <div className='flex flex-col items-left mb-2'>
           <h2 className='border bg-gray-400 text-white p-2 my-2'>Design</h2>
-          <div className='text-base grid grid-cols-2 justify-between'>
+          <div className='text-base grid grid-cols-2 justify-between gap-2'>
             <span className='border b-black p-3 mb-2'>Figma</span>
             <span className='border b-black p-3 mb-2'>Canva</span>
           </div>
