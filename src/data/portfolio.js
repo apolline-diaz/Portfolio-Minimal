@@ -17,14 +17,14 @@ export default [
     linkGit: "https://github.com/apolline-diaz/Movie-App",
     linkDemo: "https://apolline-diaz.github.io/Movie-App",
   },
-  // {
-  //     title: "Site de référencement de cinéma",
-  //     description: "Ebauche d'un site mettant en avant l'actualité des films et séries, à partir de la base de données The Movie Database.",
-  //     imgUrl: "./assets/project-movie-website-1.png",
-  //     stack:["HTML", "CSS", "JavaScript", "API"],
-  //     linkGit: "https://github.com/apolline-diaz/Search-Movie-App",
-  //     linkDemo: "https://apolline-diaz.github.io/Search-Movie-App/",
-  // },
+  {
+    title: "To-do List",
+    description: "Gestionnaire de tâches avec création d'une base de données.",
+    imgUrl: "./assets/project-to-do-list.png",
+    stack: ["HTML", "React", "PostgreSQL", "Express", "Bootstrap", "API REST"],
+    linkGit: "https://github.com/apolline-diaz/to-do-list/tree/main",
+    linkDemo: "",
+  },
   {
     title: "Plateforme e-commerce",
     description:
