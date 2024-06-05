@@ -2,18 +2,18 @@ export default [
   {
     title: "Application mobile",
     description:
-      "Application  sur Android (en cours) qui permet de découvrir des spots urbains insolites ou faire de belles photos. A partager avec sa communauté !",
+      "Application  sur Android (en cours) qui permet de découvrir des spots urbains insolites et partager ses photos. ",
     imgUrl: "./assets/project-app-mobile.png",
     stack: ["Kotlin", "Spring Boot"],
     linkGit: "https://github.com/apolline-diaz/App-mobile-Android-Urbanspots",
     linkDemo: "",
   },
   {
-    title: "Site de référencement de cinéma",
+    title: "Site de référencement cinéma",
     description:
-      "Projet personnel (en cours) de refonte d'un premier projet de site d'actualité cinéma, cette fois en React, Tailwind et avec MySQL.",
-    imgUrl: "./assets/project-movie-app.png",
-    stack: ["HTML", "CSS", "React", "Tailwind", "MySQL", "API"],
+      "Projet personnel (en cours) de refonte d'un premier site d'actualité cinéma.",
+    imgUrl: "./assets/project-movie-app-2.png",
+    stack: ["HTML", "CSS", "React", "Tailwind", "API"],
     linkGit: "https://github.com/apolline-diaz/Movie-App",
     linkDemo: "https://apolline-diaz.github.io/Movie-App",
   },
@@ -37,7 +37,7 @@ export default [
       "React",
       "Express",
       "MySQL",
-      "Sequelize",
+      // "Sequelize",
     ],
     linkGit:
       "https://github.com/apolline-diaz/E-Shop-Website-Second-hand-furniture-Adopteunmeuble",
