@@ -2,7 +2,7 @@ export default [
   {
     title: "Application mobile",
     description:
-      "Application  sur Android (en cours) qui permet de découvrir des spots urbains insolites et partager ses photos. ",
+      "Application  sur Android pour découvrir des spots urbains insolites. ",
     imgUrl: "./assets/project-app-mobile.png",
     stack: ["Kotlin", "Spring Boot"],
     linkGit: "https://github.com/apolline-diaz/App-mobile-Android-Urbanspots",
@@ -11,7 +11,7 @@ export default [
   {
     title: "Site de référencement cinéma",
     description:
-      "Projet personnel (en cours) de refonte d'un premier site d'actualité cinéma.",
+      "Projet personnel (en cours) de site d'actualité avec catalogue de films.",
     imgUrl: "./assets/project-movie-app-2.png",
     stack: ["HTML", "CSS", "React", "Tailwind", "API"],
     linkGit: "https://github.com/apolline-diaz/Movie-App",
@@ -19,7 +19,7 @@ export default [
   },
   {
     title: "To-do List",
-    description: "Gestionnaire de tâches avec création d'une base de données.",
+    description: "Gestionnaire de tâches avec une base de données.",
     imgUrl: "./assets/project-to-do-list.png",
     stack: ["HTML", "React", "PostgreSQL", "Express", "Bootstrap", "API REST"],
     linkGit: "https://github.com/apolline-diaz/to-do-list/tree/main",
@@ -28,15 +28,15 @@ export default [
   {
     title: "Plateforme e-commerce",
     description:
-      "Plateforme de vente en ligne de meubles d'occasion, interagissant avec une base de données.",
+      "Plateforme de vente de meubles d'occasion, avec une base de données.",
     imgUrl: "./assets/project-plateforme.png",
     stack: [
       "HTML",
-      "CSS",
-      "JavaScript",
       "React",
+      "CSS",
       "Express",
       "MySQL",
+      "API REST",
       // "Sequelize",
     ],
     linkGit:
@@ -46,7 +46,7 @@ export default [
   {
     title: "Extension Chrome",
     description:
-      "L'espace de Nouvel onglet est transformé avec l'univers du studio Ghibli, dotée d'outils (To Do List, météo, etc.).",
+      "Page Nouvel onglet transformée avec l'univers du studio Ghibli et doté d'outils.",
     imgUrl: "./assets/project-extension.png",
     stack: ["HTML", "CSS", "JavaScript", "API"],
     linkGit:
@@ -65,7 +65,7 @@ export default [
   {
     title: "Pokédex",
     description:
-      "Encyclopédie numérique qui recense les Pokémon à partir de PokeAPI, avec recherche par nom.",
+      "Encyclopédie numérique qui recense les Pokémon à partir de PokeAPI.",
     imgUrl: "./assets/project-pokedex.png",
     stack: ["HTML", "CSS", "React", "API"],
     linkGit: "https://github.com/apolline-diaz/Pokedex",
@@ -80,7 +80,7 @@ export default [
   //     linkDemo: "https://vimeo.com/927425518",
   // },
   {
-    title: "Jeu vidéo Pico 8 Spécial Anniversaire",
+    title: "Jeu vidéo Pico 8",
     description:
       "Projet personnel pour un anniversaire. Le concept : éliminer 27 chatons pour découvrir son cadeau.",
     imgUrl: "./assets/project-pico-anniversaire.png",

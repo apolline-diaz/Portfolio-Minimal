@@ -32,12 +32,12 @@ function App() {
               className='container justify-center items-center h-full max-w-[700px] mx-auto px-10 py-20 text-left m-auto flex flex-col gap-2 '
               data-aos='fade-up'
             >
-              <h2 className='font-light text-4xl md:text-5xl xl:text-6xl mb-3'>
+              <h2 className='font-light text-4xl md:text-5xl xl:text-6xl mb-3 text-center'>
                 Hello, <br />
                 I'm Apolline Diaz
               </h2>
               <div>
-                <h2 className='font-bold text-2xl sm:text-2xl md:text-3xl'>
+                <h2 className='font-bold text-2xl sm:text-2xl md:text-3xl mb-2'>
                   Développeuse full stack
                 </h2>
               </div>
@@ -48,9 +48,9 @@ function App() {
                   suis lancée dans le développement, après plusieurs années dans
                   le milieu du cinéma. Grâce à ma formation à Ada Tech School,
                   j'ai appris à réaliser des applications web et mobiles.
-                  Aujourd'hui, je développe de nouvelles compétences pour me
-                  spécialiser dans la programmation orientée vers le design, la
-                  valeur utilisateur et l'expérience interactive.
+                  Aujourd'hui, je souhaite me spécialiser dans la programmation
+                  orientée vers le design, la valeur utilisateur et l'expérience
+                  interactive.
                 </p>
               </div>
               <div className='space-x-3 flex flex-cols items-center'>
@@ -136,11 +136,13 @@ function App() {
                 className='bg-black text-white font-light  p-1 transition duration-200 hover:opacity-50 cursor-pointer'
               >
                 portfolio
-              </a>{" "}
+              </a>
               !
             </p>
           </div>
-          <Timeline />
+          <div className='flex justify-center items-center w-[80%] mx-auto'>
+            <Timeline />
+          </div>
         </section>
         {/* CONTACT SECTION */}
         <section id='contact' className='p-5 max-w-[700px] mx-auto'>

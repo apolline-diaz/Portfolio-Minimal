@@ -4,7 +4,7 @@ import PortfolioItem from "../components/PortfolioItem.jsx";
 
 function Portfolio() {
   return (
-    <div className='max-w-[700px] mx-auto'>
+    <div className='mx-auto'>
       <div className='grid sm:grid-col md:grid-cols-2 gap-4'>
         {portfolio.map((project) => (
           <PortfolioItem
