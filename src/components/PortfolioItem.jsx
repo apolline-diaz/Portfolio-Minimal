@@ -16,7 +16,7 @@ function PortfolioItem({
     <div>
       <div className='hover group container flex justify-center items-center mx-auto content-div bg-cover relative'>
         <img
-          className='aspect-square xs:aspect-square sm:aspect-video object-cover'
+          className=' aspect-square xs:aspect-square sm:aspect-video object-cover'
           src={imgUrl}
         />
         <div className='opacity-0 group-hover:opacity-90 bg-black absolute inset-0 flex flex-col justify-center items-center p-5 md:p-2'>

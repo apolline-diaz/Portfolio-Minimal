@@ -29,7 +29,7 @@ function App() {
         <section id='home' className='h-full w-full'>
           <div className='bg-[url("/assets/home_background.png")] h-screen w-full bg-cover bg-center '>
             <div
-              className='container justify-center items-center h-full max-w-[700px] mx-auto px-10 py-20 text-left m-auto flex flex-col gap-2 '
+              className='container justify-center items-center h-full w-[80%] mx-auto px-10 py-20 text-left m-auto flex flex-col gap-2 '
               data-aos='fade-up'
             >
               <h2 className='font-light text-4xl md:text-5xl xl:text-6xl mb-3 text-center'>
@@ -43,7 +43,7 @@ function App() {
               </div>
 
               <div>
-                <p className='font-light text-justify text-l sm:text-md md:text-xl w-50 max-w-4xl mb-2'>
+                <p className='font-light text-center text-l sm:text-md md:text-xl w-50 max-w-4xl mb-2'>
                   Passionnée par la création audiovisuelle et multimédia, je me
                   suis lancée dans le développement, après plusieurs années dans
                   le milieu du cinéma. Grâce à ma formation à Ada Tech School,
@@ -96,11 +96,11 @@ function App() {
         {/* PROJECTS SECTION */}
         <section
           id='projects'
-          className='p-5 justify-center items-center max-w-[700px] mx-auto'
+          className='p-5 justify-center items-center w-[80%] mx-auto'
         >
-          <div className='container  m-auto px-4'>
-            <h2 className='text-4xl font-light my-5'>Projets</h2>
-            <p className='text-base font-light md:text-lg text-justify mb-5'>
+          <div className='container m-auto px-4'>
+            <h2 className='text-4xl font-light my-5 text-center'>Projets</h2>
+            <p className='text-base font-light md:text-lg text-center mb-5'>
               Chaque nouveau projet est une opportunité de prendre en main une
               nouvelle technologie, se l'approprier et en exploiter son
               potentiel. Je me consacre autant à la conception et l'amélioration
@@ -111,15 +111,17 @@ function App() {
             <div className='grid grid-cols-1 sm:grid-col md:grid-col lg:grid-col gap-10'>
               <Portfolio />
             </div>
-            <h2 className='text-2xl font-light my-5'>Compétences techniques</h2>
+            <h2 className='text-2xl font-light my-5 text-center'>
+              Compétences techniques
+            </h2>
             <Skills />
           </div>
         </section>
         {/* EXPERIENCE SECTION */}
-        <section id='experience' className='p-5 max-w-[700px] mx-auto'>
+        <section id='experience' className='p-5 w-[80%] mx-auto'>
           <div className='container m-auto px-4 mb-10'>
-            <h2 className='text-4xl font-light my-5'>Expérience</h2>
-            <p className='text-base font-light md:text-lg text-justify'>
+            <h2 className='text-4xl font-light my-5 text-center'>Expérience</h2>
+            <p className='text-base font-light md:text-lg text-center'>
               Pendant mes années dans les salles de cinéma, j'avais une autre
               passion : partager des films peu connus du grand public, et
               trouver des moyens de les rendre plus accessibles. Internet était
@@ -145,9 +147,9 @@ function App() {
           </div>
         </section>
         {/* CONTACT SECTION */}
-        <section id='contact' className='p-5 max-w-[700px] mx-auto'>
+        <section id='contact' className='p-5  w-[80%] mx-auto'>
           <div className='container m-auto px-4 mb-10'>
-            <h2 className='text-4xl font-light'>Contact</h2>
+            <h2 className='text-4xl font-light text-center'>Contact</h2>
           </div>
           <Contact />
         </section>
