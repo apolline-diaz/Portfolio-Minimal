@@ -12,7 +12,7 @@ export default [
     title: "Site de référencement cinéma",
     description:
       "Projet personnel (en cours) de site d'actualité avec catalogue de films.",
-    imgUrl: "./assets/project-movie-app-2.png",
+    imgUrl: "./assets/project-movie-app.png",
     stack: ["HTML", "CSS", "React", "Tailwind", "API"],
     linkGit: "https://github.com/apolline-diaz/Movie-App",
     linkDemo: "https://apolline-diaz.github.io/Movie-App",

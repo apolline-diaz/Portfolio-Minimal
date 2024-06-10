@@ -29,10 +29,10 @@ function App() {
         <section id='home' className='h-full w-full'>
           <div className='bg-[url("/assets/home_background.png")] h-screen w-full bg-cover bg-center '>
             <div
-              className='container justify-center items-center h-full w-[80%] mx-auto px-10 py-20 text-left m-auto flex flex-col gap-2 '
+              className='container justify-center items-center text-center h-full  xs:w-full s:w-full md:w-[80%] mx-auto px-10 py-20 m-auto flex flex-col gap-2 '
               data-aos='fade-up'
             >
-              <h2 className='font-light text-4xl md:text-5xl xl:text-6xl mb-3 text-center'>
+              <h2 className='font-light text-4xl md:text-5xl xl:text-6xl mb-3'>
                 Hello, <br />
                 I'm Apolline Diaz
               </h2>
@@ -41,9 +41,8 @@ function App() {
                   Développeuse full stack
                 </h2>
               </div>
-
               <div>
-                <p className='font-light text-center text-l sm:text-md md:text-xl w-50 max-w-4xl mb-2'>
+                <p className='font-light  text-l sm:text-md md:text-xl w-50 max-w-4xl mb-2'>
                   Passionnée par la création audiovisuelle et multimédia, je me
                   suis lancée dans le développement, après plusieurs années dans
                   le milieu du cinéma. Grâce à ma formation à Ada Tech School,
@@ -62,11 +61,6 @@ function App() {
                 >
                   CV
                 </button>
-                {/* <a href="mailto:apolline.diaz@gmail.com">
-                  <button className="bg-black text-white font-light p-2 transition duration-200 hover:opacity-50">
-                    Contact
-                  </button>
-                </a> */}
                 <a
                   href='https://github.com/apolline-diaz'
                   target='_blank'
@@ -96,7 +90,7 @@ function App() {
         {/* PROJECTS SECTION */}
         <section
           id='projects'
-          className='p-5 justify-center items-center w-[80%] mx-auto'
+          className='p-5 justify-center items-center xs:w-full s:w-full md:w-[80%]  mx-auto'
         >
           <div className='container m-auto px-4'>
             <h2 className='text-4xl font-light my-5 text-center'>Projets</h2>
@@ -118,7 +112,10 @@ function App() {
           </div>
         </section>
         {/* EXPERIENCE SECTION */}
-        <section id='experience' className='p-5 w-[80%] mx-auto'>
+        <section
+          id='experience'
+          className='p-5 xs:w-full s:w-full md:w-[80%] mx-auto'
+        >
           <div className='container m-auto px-4 mb-10'>
             <h2 className='text-4xl font-light my-5 text-center'>Expérience</h2>
             <p className='text-base font-light md:text-lg text-center'>
@@ -147,7 +144,7 @@ function App() {
           </div>
         </section>
         {/* CONTACT SECTION */}
-        <section id='contact' className='p-5  w-[80%] mx-auto'>
+        <section id='contact' className='p-5  xs:w-full s:w-full md:w-[80%]  mx-auto'>
           <div className='container m-auto px-4 mb-10'>
             <h2 className='text-4xl font-light text-center'>Contact</h2>
           </div>
