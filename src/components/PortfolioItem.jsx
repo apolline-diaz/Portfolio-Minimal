@@ -19,7 +19,7 @@ function PortfolioItem({
           className=' aspect-square xs:aspect-square sm:aspect-video object-cover'
           src={imgUrl}
         />
-        <div className='opacity-0 group-hover:opacity-90 bg-black absolute inset-0 flex flex-col justify-center items-center p-5 md:p-2'>
+        <div className='opacity-0 transition duration-500 group-hover:opacity-90 bg-black absolute inset-0 flex flex-col justify-center items-center p-5 md:p-2'>
           <span className='text-white tracking-wider text-center p-4 sm:p-3'>
             <p className=' md:leading-5 text-base sm:text-base md:text-xs lg:text-xs font-light mb-3'>
               {description}
