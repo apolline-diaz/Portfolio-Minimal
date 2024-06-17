@@ -28,10 +28,10 @@ function App() {
 
         <section id='home' className='h-full w-full'>
           <div
-            className='container justify-center items-center text-center h-full  xs:w-full s:w-full md:w-[80%] mx-auto px-10 py-20 m-auto flex flex-col gap-2 '
+            className='container justify-center items-center text-center h-full  xs:w-full s:w-full md:w-[80%] xl:w-[70%] mx-auto px-10 py-20 m-auto flex flex-col gap-2 '
             data-aos='fade-up'
           >
-            <h2 className='font-bold text-4xl md:text-5xl xl:text-6xl mb-3'>
+            <h2 className='font-bold text-4xl md:text-5xl xl:text-6xl mb-3 '>
               Hello, <br />
               I'm Apolline Diaz
             </h2>
@@ -41,14 +41,13 @@ function App() {
               </h2>
             </div>
             <div>
-              <p className='font-light  text-md xs:text-sm sm:text-md md:text-l w-50 max-w-3xl mb-2'>
+              <p className='font-light  text-base sm:text-base md:text-lg w-50 max-w-3xl mb-5'>
                 Passionnée par la création audiovisuelle et multimédia, je me
                 suis lancée dans le développement, après plusieurs années dans
                 le milieu du cinéma. Grâce à ma formation à Ada Tech School,
                 j'ai appris à réaliser des applications web et mobiles.
-                Aujourd'hui, je souhaite me spécialiser dans la programmation
-                orientée vers le design, la valeur utilisateur et l'expérience
-                interactive.
+                Aujourd'hui, j'évolue dans la programmation en intégrant l'UX et
+                l'UI Design.
               </p>
             </div>
             <div className='space-x-3 flex flex-cols items-center'>
@@ -56,7 +55,7 @@ function App() {
                 onClick={() =>
                   window.open("./assets/CV_ApollineDiaz.pdf", "_blank")
                 }
-                className='bg-black text-white font-bold rounded-full p-1.5 transition duration-200 hover:opacity-50'
+                className='bg-black text-white font-bold rounded-full py-1 px-2 transition duration-200 hover:opacity-50'
               >
                 CV
               </button>
@@ -88,10 +87,10 @@ function App() {
         {/* PROJECTS SECTION */}
         <section
           id='projects'
-          className='p-5 justify-center items-center xs:w-full s:w-full md:w-[80%]  mx-auto'
+          className='p-5 justify-center items-center xs:w-full s:w-full md:w-[80%] xl:w-[70%] mx-auto'
         >
-          <div className='container m-auto px-4'>
-            <h2 className='text-4xl font-light my-10 text-center'>Projets</h2>
+          <div className='container m-auto px-4 '>
+            <h2 className='text-4xl font-bold my-10 text-center'>Projets</h2>
             <p className='text-base font-light md:text-lg text-center mb-10'>
               Chaque nouveau projet est une opportunité de prendre en main une
               nouvelle technologie, se l'approprier et en exploiter son
@@ -103,7 +102,7 @@ function App() {
             <div className='grid grid-cols-1 sm:grid-col md:grid-col lg:grid-col gap-10'>
               <Portfolio />
             </div>
-            <h2 className='text-2xl font-light my-10 text-center'>
+            <h2 className='text-2xl font-medium my-10 text-center'>
               Compétences techniques
             </h2>
             <Skills />
@@ -112,12 +111,10 @@ function App() {
         {/* EXPERIENCE SECTION */}
         <section
           id='experience'
-          className='p-5 xs:w-full s:w-full md:w-[80%] mx-auto'
+          className='p-5 xs:w-full s:w-full md:w-[80%] xl:w-[70%]  mx-auto'
         >
           <div className='container m-auto px-4 mb-10'>
-            <h2 className='text-4xl font-light my-10 text-center'>
-              Expérience
-            </h2>
+            <h2 className='text-4xl font-bold my-10 text-center'>Expérience</h2>
             <p className='text-base font-light md:text-lg text-center mb-10'>
               Pendant mes années dans les salles de cinéma, j'avais une autre
               passion : partager des films peu connus du grand public, et
@@ -139,17 +136,17 @@ function App() {
               !
             </p>
           </div>
-          <div className='flex justify-center items-center w-[80%] mx-auto'>
+          <div className='flex justify-center items-center w-[80%] xl:w-[70%]  mx-auto'>
             <Timeline />
           </div>
         </section>
         {/* CONTACT SECTION */}
         <section
           id='contact'
-          className='p-5 my-10 xs:w-full s:w-full md:w-[80%]  mx-auto'
+          className='p-5 my-10 xs:w-full s:w-full md:w-[80%] xl:w-[70%]   mx-auto'
         >
           <div className='container m-auto px-4 my-10'>
-            <h2 className='text-4xl font-light text-center'>Contact</h2>
+            <h2 className='text-4xl font-bold text-center'>Contact</h2>
           </div>
           <Contact />
         </section>
