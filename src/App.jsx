@@ -27,10 +27,7 @@ function App() {
         {/* HOME SECTION */}
 
         <section id='home' className='h-full w-full'>
-          <div
-            className='container justify-center items-center text-center h-full  xs:w-full s:w-full md:w-[80%] xl:w-[70%] mx-auto px-10 py-20 m-auto flex flex-col gap-2 '
-            data-aos='fade-up'
-          >
+          <div className='justify-center items-center text-center h-full  xs:w-full s:w-full md:w-[80%] xl:w-[70%] mx-auto px-10 py-20 m-auto flex flex-col gap-2 '>
             <h2 className='font-bold text-4xl md:text-5xl xl:text-6xl mb-3 '>
               Hello, <br />
               I'm Apolline Diaz
@@ -41,7 +38,7 @@ function App() {
               </h2>
             </div>
             <div>
-              <p className='font-light  text-base sm:text-base md:text-lg w-50 max-w-3xl mb-5'>
+              <p className='font-light  text-base sm:text-base md:text-lg w-50 max-w-3xl py-5 mb-5'>
                 Passionnée par la création audiovisuelle et multimédia, je me
                 suis lancée dans le développement, après plusieurs années dans
                 le milieu du cinéma. Grâce à ma formation à Ada Tech School,
@@ -87,11 +84,11 @@ function App() {
         {/* PROJECTS SECTION */}
         <section
           id='projects'
-          className='p-5 justify-center items-center xs:w-full s:w-full md:w-[80%] xl:w-[70%] mx-auto'
+          className='p-5 items-center justify-center xs:w-full s:w-full md:w-[80%] xl:w-[70%] mx-auto'
         >
-          <div className='container m-auto px-4 '>
-            <h2 className='text-4xl font-bold my-10 text-center'>Projets</h2>
-            <p className='text-base font-light md:text-lg text-center mb-10'>
+          <div className='container m-auto px-4 text-center flex flex-col items-center'>
+            <h2 className='text-4xl font-bold my-10'>Projets</h2>
+            <p className='text-base font-light md:text-lg mb-10 w-full max-w-3xl'>
               Chaque nouveau projet est une opportunité de prendre en main une
               nouvelle technologie, se l'approprier et en exploiter son
               potentiel. Je me consacre autant à la conception et l'amélioration
@@ -99,7 +96,7 @@ function App() {
               traitement des bases de données. Avant de faire la déco d'une
               maison, il ne faut pas oublier ses fondements!
             </p>
-            <div className='grid grid-cols-1 sm:grid-col md:grid-col lg:grid-col gap-10'>
+            <div className='grid grid-cols-1 sm:grid-col md:grid-col lg:grid-col gap-10 '>
               <Portfolio />
             </div>
             <h2 className='text-2xl font-medium my-10 text-center'>
@@ -111,11 +108,11 @@ function App() {
         {/* EXPERIENCE SECTION */}
         <section
           id='experience'
-          className='p-5 xs:w-full s:w-full md:w-[80%] xl:w-[70%]  mx-auto'
+          className='p-5 items-center justify-center xs:w-full s:w-full md:w-[80%] xl:w-[70%] mx-auto'
         >
-          <div className='container m-auto px-4 mb-10'>
+          <div className='container m-auto px-4 text-center flex flex-col items-center'>
             <h2 className='text-4xl font-bold my-10 text-center'>Expérience</h2>
-            <p className='text-base font-light md:text-lg text-center mb-10'>
+            <p className='text-base font-light md:text-lg mb-10 w-full max-w-3xl'>
               Pendant mes années dans les salles de cinéma, j'avais une autre
               passion : partager des films peu connus du grand public, et
               trouver des moyens de les rendre plus accessibles. Internet était

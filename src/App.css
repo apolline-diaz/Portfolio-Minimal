@@ -32,18 +32,3 @@ body {
   width: max-content;
   width: 0;
 }
-
-@keyframes typing-text {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes typing-text {
-  50% {
-    border-color: transparent;
-  }
-}
