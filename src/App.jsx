@@ -122,7 +122,7 @@ function App() {
               <a
                 onClick={() =>
                   window.open(
-                    "./assets/Portfolio_Apolline_Lawrens_Diaz.pdf",
+                    "./assets/Portfolio_Experience_Cinema_Multimedia.pdf",
                     "_blank"
                   )
                 }
